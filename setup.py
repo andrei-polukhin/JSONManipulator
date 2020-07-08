@@ -9,7 +9,7 @@ with open("README.md", 'r') as file:
 
 setup(
     name="JSONManipulator",
-    description="A Python library to manipulate objects in JSON files.",
+    description="A Python package to manipulate objects in JSON files.",
     version="1.0",
     long_description=long_description,
     author="Andrew Polukhin",
