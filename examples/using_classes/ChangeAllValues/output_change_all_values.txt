@@ -1,0 +1,16 @@
+--------Use this only if you want to change the key'(s) values of all objects--------
+Proceed? (Y/n) Y
+
+Press <Enter> if you do not want to change the value
+Input 'del' if you want to delete that key
+Or assign the new value to the given descriptions:
+--------<Title>:
+--------<ISBN>:
+--------<The number of pages>:
+--------<Authors>:
+--------<Categories>:
+--------<Reading Status>: Maybe Will Read Later...
+
+Success!
+
+Process finished with exit code 0

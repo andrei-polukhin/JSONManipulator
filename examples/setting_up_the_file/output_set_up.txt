@@ -1,0 +1,17 @@
+
+Assign a short description to the keys (press <Enter> if you don't need this key):
+<title>: Title
+<isbn>: ISBN
+<pageCount>: The number of pages
+<publishedDate>: The date of publishing
+<thumbnailUrl>:
+<shortDescription>: Short description
+<longDescription>:
+<status>:
+<authors>: Authors
+<categories>: Categories
+
+Success!
+
+Process finished with exit code 0
+

@@ -1,0 +1,11 @@
+
+Title:		Unlocking Android
+ISBN:		1933988673
+The number of pages:		416
+The date of publishing:		2009-04-01T00:00:00.000-0700
+Short description:	Unlocking Android: A Developer's Guide provides concise, hands-on instruction for the Android operating system and development tools.
+					This book teaches important architectural concepts in a straightforward writing style and builds on this with practical and useful examples throughout.
+Authors:		W. Frank Ableson, Charlie Collins, Robi Sen
+Categories:		Open Source, Mobile
+
+Process finished with exit code 0

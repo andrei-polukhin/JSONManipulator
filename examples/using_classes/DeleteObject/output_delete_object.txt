@@ -1,0 +1,16 @@
+
+Title:		Android in Practice
+ISBN:		1935182927
+The number of pages:		500
+The date of publishing:		2011-09-30T00:00:00.000-0700
+Short description:	Android in Practice is treasure trove of Android goodness, with over 100 tested, ready-to-use techniques including complete end-to-end example applications and practical tips for real world mobile application developers.
+					Written by real world Android developers, this book addresses the trickiest questions raised in forums and mailing lists.
+					Using an easy-to-follow problem/solution/discussion format, it dives into important topics not covered in other Android books, like advanced drawing and graphics, testing and instrumentation, building and deploying applications, using alternative languages, and native development.
+Authors:		Charlie Collins, Michael D. Galpin, Matthias Kaeppler
+Categories:		Mobile Technology
+
+Delete the object (Y/n)? Y
+
+Success!
+
+Process finished with exit code 0

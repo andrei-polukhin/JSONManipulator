@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+JSONManipulator/__init__.py
+JSONManipulator/core.py
+JSONManipulator/exceptions.py
+JSONManipulator.egg-info/PKG-INFO
+JSONManipulator.egg-info/SOURCES.txt
+JSONManipulator.egg-info/dependency_links.txt
+JSONManipulator.egg-info/top_level.txt
+examples/books.json
+examples/credits.txt

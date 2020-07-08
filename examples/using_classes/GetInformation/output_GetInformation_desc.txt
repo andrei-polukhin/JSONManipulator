@@ -1,0 +1,629 @@
+
+Title:		Android in Action, Second Edition
+ISBN:		1935182722
+The number of pages:		592
+The date of publishing:		2011-01-14T00:00:00.000-0800
+Short description:	Android in Action, Second Edition is a comprehensive tutorial for Android developers.
+					Taking you far beyond "Hello Android," this fast-paced book puts you in the driver's seat as you learn important architectural concepts and implementation strategies.
+					You'll master the SDK, build WebKit apps using HTML 5, and even learn to extend or replace Android's built-in features by building useful and intriguing examples.
+
+Authors:		W. Frank Ableson, Robi Sen
+Categories:		Java
+
+Title:		Griffon in Action
+ISBN:		1935182234
+The number of pages:		375
+The date of publishing:		2012-06-04T00:00:00.000-0700
+Short description:	Griffon in Action is a comprehensive tutorial written for Java developers who want a more productive approach to UI development.
+					In this book, you'll immediately dive into Griffon.
+					After a Griffon orientation and a quick Groovy tutorial, you'll start building examples that explore Griffon's high productivity approach to Swing development.
+					One of the troublesome parts of Swing development is the amount of Java code that is required to get a simple application off the ground.
+Authors:		Andres Almiray, Danno Ferrin, James Shingler
+Categories:		Java
+
+Title:		OSGi in Depth
+ISBN:		193518217X
+The number of pages:		325
+The date of publishing:		2011-12-12T00:00:00.000-0800
+Short description:	Enterprise OSGi shows a Java developer how to develop to the OSGi Service Platform Enterprise specification, an emerging Java-based technology for developing modular enterprise applications.
+					Enterprise OSGi addresses several shortcomings of existing enterprise platforms, such as allowing the creation of better maintainable and extensible applications, and provide a simpler, easier-to-use, light-weight solution to enterprise software development.
+Authors:		Alexandre de Castro Alves
+Categories:		Java
+
+Title:		Hibernate in Action
+ISBN:		193239415X
+The number of pages:		400
+The date of publishing:		2004-08-01T00:00:00.000-0700
+Short description:	"2005 Best Java Book!" -- Java Developer's Journal
+Authors:		Christian Bauer, Gavin King
+Categories:		Java
+
+Title:		Hibernate in Action (Chinese Edition)
+The number of pages:		400
+The date of publishing:		1999-06-01T00:00:00.000-0700
+Authors:		Christian Bauer, Gavin King
+Categories:		Java
+
+Title:		Java Persistence with Hibernate
+ISBN:		1932394885
+The number of pages:		880
+The date of publishing:		2006-11-01T00:00:00.000-0800
+Short description:	"...this book is the ultimate solution.
+					If you are going to use Hibernate in your application, you have no other choice, go rush to the store and get this book." --JavaLobby
+Authors:		Christian Bauer, Gavin King
+Categories:		Java
+
+Title:		Hibernate Search in Action
+ISBN:		1933988649
+The number of pages:		488
+The date of publishing:		2008-12-21T00:00:00.000-0800
+Short description:	"A great resource for true database independent full text search." --Aaron Walker, base2Services
+Authors:		Emmanuel Bernard, John Griffin
+Categories:		Java
+
+Title:		jQuery in Action, Second Edition
+ISBN:		1935182323
+The number of pages:		488
+The date of publishing:		2010-06-01T00:00:00.000-0700
+Short description:	jQuery in Action, Second Edition is a fast-paced introduction to jQuery that will take your JavaScript programming to the next level.
+					An in-depth rewrite of the bestselling first edition, this edition provides deep and practical coverage of the latest jQuery and jQuery UI releases.
+					The book's unique "lab pages" anchor the explanation of each new concept in a practical example.
+					You'll learn how to traverse HTML documents, handle events, perform animations, and add Ajax to your web pages.
+					This comprehensive guide also teaches you how jQuery interacts with other tools and frameworks and how to build jQuery plugins.
+
+Authors:		Bear Bibeault, Yehuda Katz
+Categories:		Java
+
+Title:		Spring Dynamic Modules in Action
+ISBN:		1935182307
+The number of pages:		450
+The date of publishing:		2010-09-04T00:00:00.000-0700
+Short description:	Spring Dynamic Modules in Action introduces Spring DM and OSGi to Java EE developers and architects.
+					It presents the fundamental concepts of OSGi-based apps and maps them to the familiar ideas of the Spring framework.
+					Then, it engages you with the techniques and concepts you'll need to develop stable, flexible enterprise apps.
+					You'll learn how to embed a Spring container inside an OSGi bundle, and how Spring DM lets you blend Spring strengths like dependency injection with OSGi-based services.
+					Along the way, you'll see how Spring DM handles data access and web-based components, and you'll explore topics like unit testing and configuration in an OSGi-based environment.
+Authors:		Arnaud Cogoluegnes, Thierry Templier, Andy Piper
+Categories:		Java
+
+Title:		POJOs in Action
+ISBN:		1932394583
+The number of pages:		592
+The date of publishing:		2006-01-01T00:00:00.000-0800
+Short description:	"POJOs in Action is required reading for battle-weary EJB developers and for new developers who want to avoid the sins of the fathers by using lightweight frameworks.
+					   -- C# Online.NET
+Authors:		Chris Richardson
+Categories:		Java
+
+Title:		Seam in Action
+ISBN:		1933988401
+The number of pages:		624
+The date of publishing:		2008-08-01T00:00:00.000-0700
+Short description:	Seam in Action goes into great detail on the ways in which Seam helps reduce the burden of integration with different technologies such as Hibernate and JSF, allowing the developer to focus on the core business objective at hand.
+					      Shobana Jayaraman, Digital Infrastructure Analyst, University of Texas Southwestern Medical Center Library, The Tech Static
+Authors:		Dan Allen
+Categories:		Java
+
+Title:		Open Source SOA
+ISBN:		1933988541
+The number of pages:		448
+The date of publishing:		2009-05-01T00:00:00.000-0700
+Authors:		Jeff Davis
+Categories:		Java
+
+Title:		Struts 2 in Action
+ISBN:		193398807X
+The number of pages:		432
+The date of publishing:		2008-05-01T00:00:00.000-0700
+Authors:		Donald Brown, Chad Michael Davis, Scott Stanlick
+Categories:		Java
+
+Title:		Spring Roo in Action
+ISBN:		193518296X
+The number of pages:		500
+The date of publishing:		2012-04-13T00:00:00.000-0700
+Authors:		Ken Rimple, Srini Penchikala
+Categories:		Java
+
+Title:		SOA Governance in Action
+ISBN:		1617290270
+The date of publishing:		2012-07-27T00:00:00.000-0700
+Authors:		Jos Dirksen
+Categories:		java
+
+Title:		Java Foundation Classes
+ISBN:		1884777678
+The number of pages:		1088
+The date of publishing:		2001-10-01T00:00:00.000-0700
+Authors:		Stephen C. Drye, William C. Wake
+Categories:		Java
+
+Title:		Managing Components with Modeler
+ISBN:		1932394524k-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:		Command-line Processing with CLI
+ISBN:		1932394524l-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:		Understanding and Using Chain
+ISBN:		1932394524m-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:		Working with the Logging and Discovery Components
+ISBN:		1932394524n-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:		Uploading files with FileUpload
+ISBN:		1932394524b-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:		Handling Protocols with the Net Component
+ISBN:		1932394524c-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:		XML Parsing with Digester
+ISBN:		1932394524d-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:		JXPath and Betwixt: Working with XML
+ISBN:		1932394524e-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:		Validating Data with Validator
+ISBN:		1932394524f-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:		Enhancing Java Core Libraries with Collections
+ISBN:		1932394524g-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:	Enhancing Java Core Libraries with BeanUtils and Lang
+ISBN:		1932394524h-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:		Pool and DBCP: Creating and Using Object Pools
+ISBN:		1932394524i-e
+The date of publishing:		2005-03-01T00:00:00.000-0800
+Authors:		Vikram Goyal
+Categories:		Java
+
+Title:		Grails in Action
+ISBN:		1933988932
+The number of pages:		520
+The date of publishing:		2009-05-01T00:00:00.000-0700
+Short description:	Grails in Action is a comprehensive guide to the Grails framework.
+					First, the basics: the domain model, controllers, views, and services.
+					Then, the fun! Dive into a Twitter-style app with features like AJAX/JSON, animation, search, wizards   even messaging and Jabber integration.
+					Along the way, you'll discover loads of great plugins that'll make your app shine.
+					Learn to integrate with existing Java systems using Spring and Hibernate.
+					You'll need basic familiarity with Java and the web.
+Authors:		Glen Smith, Peter Ledbrook
+Categories:		Java
+
+Title:		Up to Speed with Swing, Second Edition
+ISBN:		1884777759
+The number of pages:		560
+The date of publishing:		1999-10-01T00:00:00.000-0700
+Short description:	Now in its Second Edition, Up to Speed with Swing is for you if you want to get on the fast track to Java Swing.
+					The second edition has been extensively updated to cover Java 1.2 with additional code examples and illustrations.
+Authors:		Steven Gutz
+Categories:		Java
+
+Title:		Lucene in Action
+ISBN:		1932394281
+The number of pages:		456
+The date of publishing:		2004-12-01T00:00:00.000-0800
+Authors:		Erik Hatcher, Otis Gospodnetic
+Categories:		Java
+
+Title:		The Awesome Power of PowerJ
+ISBN:		1884777538
+The number of pages:		378
+The date of publishing:		1998-05-01T00:00:00.000-0700
+Short description:	The Awesome Power of PowerJ shows you how you can write Java programs the very first day with PowerJ, even if you don't know Java.
+					Through a hands-on approach that makes liberal use of figures and code snippets, you will learn how to use PowerJ to build effective Java applets and applications.
+Authors:		Tim Hatton
+Categories:		Java
+
+Title:		Portlets and Apache Portals
+The number of pages:		500
+The date of publishing:		2005-10-01T00:00:00.000-0700
+Short description:	Portlets and Apache Portals was not published by Manning, but the manuscript is available for download from our website "as is."
+Authors:		Stefan Hepper, Peter Fischer, Stephan Hesmer, Richard Jacob, David Sean Taylor
+Categories:		Java
+
+Title:		Java Network Programming, Second Edition
+ISBN:		188477749X
+The number of pages:		860
+The date of publishing:		1999-05-01T00:00:00.000-0700
+Authors:		Merlin Hughes, Michael Shoffner, Derek Hamner
+Categories:		Java
+
+Title:		Camel in Action
+ISBN:		1935182366
+The number of pages:		375
+The date of publishing:		2011-01-04T00:00:00.000-0800
+Short description:	Camel in Action is for developers working with integration of any kind.
+					This highly practical book introduces Camel and shows examples of how to use it with the 45+ supported enterprise integration patterns.
+					Written by the people who wrote the Camel code, it's up to date and distills details and insights that only people deeply involved with Camel could provide.
+Authors:		Claus Ibsen, Jonathan Anstey
+Categories:		Java
+
+Title:		JBoss in Action
+ISBN:		1933988029
+The number of pages:		496
+The date of publishing:		2009-01-01T00:00:00.000-0800
+Authors:		Javid Jamae, Peter Johnson
+Categories:		Java
+
+Title:		Groovy in Action
+ISBN:		1932394842
+The number of pages:		696
+The date of publishing:		2007-01-01T00:00:00.000-0800
+Authors:		Dierk Koenig with Andrew Glover, Paul King, Guillaume Laforge, Jon Skeet
+Categories:		Java
+
+Title:		Groovy in Action, Second Edition
+ISBN:		1935182447
+The number of pages:		700
+Short description:	Groovy in Action, Second Edition is a thoroughly-revised, comprehensive guide to Groovy programming.
+					It introduces Java developers to the dynamic features that Groovy provides, and shows you how to apply Groovy to a range of tasks including building new apps, integration with existing code, and DSL development.
+Authors:		Dierk König, Guillaume Laforge, Paul King, Cédric Champeau, Hamlet D'Arcy, Erik Pragt, Jon Skeet
+Categories:		Java
+
+Title:		Effective Unit Testing
+ISBN:		1935182579
+The number of pages:		350
+The date of publishing:		2013-02-04T00:00:00.000-0800
+Authors:		Lasse Koskela
+Categories:		Java
+
+Title:		Making Java Groovy
+ISBN:		1935182943
+The date of publishing:		2013-09-19T00:00:00.000-0700
+Short description:	Making Java Groovy is a practical handbook for developers who want to blend Groovy into their day-to-day work with Java.
+					It starts by introducing the key differences between Java and Groovy   and how you can use them to your advantage.
+					Then, it guides you step-by-step through realistic development challenges, from web applications to web services to desktop applications, and shows how Groovy makes them easier to put into production.
+Authors:		Kenneth A. Kousen
+Categories:		Java
+
+Title:		AspectJ in Action
+ISBN:		1930110936
+The number of pages:		512
+The date of publishing:		2003-07-01T00:00:00.000-0700
+Authors:		Ramnivas Laddad
+Categories:		Java
+
+Title:		AspectJ in Action, Second Edition
+ISBN:		1933988053
+The number of pages:		568
+The date of publishing:		2009-09-01T00:00:00.000-0700
+Short description:	AspectJ in Action, Second Edition is a fully updated, major revision of Ramnivas Laddad's best-selling first edition.
+					It's a hands-on guide for Java developers.
+					After introducing the core principles of AOP, it shows you how to create reusable solutions using AspectJ 6 and Spring 3.
+					You'll master key features including annotation-based syntax, load-time weaver, annotation-based crosscutting, and Spring-AspectJ integration.
+					Building on familiar technologies such as JDBC, Hibernate, JPA, Spring Security, Spring MVC, and Swing, you'll apply AOP to common problems encountered in enterprise applications.
+Authors:		Ramnivas Laddad
+Categories:		Java
+
+Title:		Hadoop in Action
+ISBN:		1935182196
+The number of pages:		325
+The date of publishing:		2010-12-01T00:00:00.000-0800
+Short description:	Hadoop in Action teaches readers how to use Hadoop and write MapReduce programs.
+					The intended readers are programmers, architects, and project managers who have to process large amounts of data offline.
+					Hadoop in Action will lead the reader from obtaining a copy of Hadoop to setting it up in a cluster and writing data analytic programs.
+Authors:		Chuck Lam
+Categories:		Java
+
+Title:		Tuscany SCA in Action
+ISBN:		1933988894
+The number of pages:		472
+The date of publishing:		2011-02-12T00:00:00.000-0800
+Short description:	Tuscany in Action is a comprehensive, hands-on guide for developing technology agnostic, extensible applications using Apache Tuscany's lightweight SCA infrastructure.
+					The book uses practical examples based on a travel booking scenario to demonstrate how to develop applications with Tuscany SCA.
+					Apache Tuscany supports a variety of programming environments, data bindings and communication protocols "out of the box" and can be easily extended to support other technologies.
+Authors:		Simon Laws, Mark Combellack, Raymond Feng, Haleh Mahbod, Simon Nash
+Categories:		Java
+
+Title:		Ant in Action
+ISBN:		193239480X
+The number of pages:		600
+The date of publishing:		2007-07-01T00:00:00.000-0700
+Short description:	The most widely used build tool for Java projects, Ant is cross-platform, extensible, simple, and fast.
+					It scales from small personal projects to large, multi-team enterprise projects.
+					And, most important, it   s easy to learn.
+Authors:		Steve Loughran, Erik Hatcher
+Categories:		Java
+
+Title:		iText in Action, Second Edition
+ISBN:		1935182617
+The number of pages:		600
+The date of publishing:		2010-11-22T00:00:00.000-0800
+Short description:	iText in Action, Second Edition offers an introduction and a practical guide to iText and the internals of PDF.
+					While at the entry level iText is easy to learn, there's an astonishing range of things you can do once you dive below the surface.
+					This book lowers the learning curve and, though numerous innovative and practical examples, unlocks the secrets hidden in Adobe's PDF Reference.
+					The examples are in Java but they can be easily adapted to .NET using one of iText's .NET ports: iTextSharp or iText.NET.
+Authors:		Bruno Lowagie
+Categories:		Java
+
+Title:		Subversion in Action
+ISBN:		1932394478
+The number of pages:		356
+The date of publishing:		2004-12-01T00:00:00.000-0800
+Short description:	Learn all about this new open source version control application and why it is replacing CVS as the standard.
+					Examples demonstrate how to customize features to deal with day-to-day problems.
+Authors:		Jeffrey Machols
+Categories:		Java
+
+Title:		Distributed Programming with Java
+ISBN:		1884777651
+The number of pages:		320
+The date of publishing:		1999-09-01T00:00:00.000-0700
+Authors:		Qusay H. Mahmoud
+Categories:		Java
+
+Title:		JavaServer Faces in Action
+ISBN:		1932394125
+The number of pages:		744
+The date of publishing:		2004-11-01T00:00:00.000-0800
+Authors:		Kito D. Mann
+Categories:		Java
+
+Title:		JUnit in Action
+ISBN:		1930110995
+The number of pages:		384
+The date of publishing:		2003-10-01T00:00:00.000-0700
+Authors:		Vincent Massol with Ted Husted
+Categories:		Java
+
+Title:		Tika in Action
+ISBN:		1935182854
+The date of publishing:		2011-12-01T00:00:00.000-0800
+Authors:		Chris A. Mattmann, Jukka L. Zitting
+Categories:		Java
+
+Title:		JavaFX in Action
+ISBN:		1933988991
+The number of pages:		373
+The date of publishing:		2009-10-01T00:00:00.000-0700
+Authors:		Simon Morris
+Categories:		Java
+
+Title:		Mahout in Action
+ISBN:		1935182684
+The number of pages:		375
+The date of publishing:		2011-10-05T00:00:00.000-0700
+Authors:		Sean Owen, Robin Anil, Ted Dunning, Ellen Friedman
+Categories:		Java
+
+Title:		EJB 3 in Action
+ISBN:		1933988347
+The number of pages:		712
+The date of publishing:		2007-04-01T00:00:00.000-0700
+Authors:		Debu Panda, Reza Rahman, Derek Lane
+Categories:		Java
+
+Title:		EJB 3 in Action, Second Edition
+ISBN:		1935182994
+The date of publishing:		2014-04-07T00:00:00.000-0700
+Short description:	Building on the bestselling first edition, EJB 3 in Action, Second Edition tackles EJB 3.1 head-on, through numerous code samples, real-life scenarios, and illustrations.
+					This book is a fast-paced tutorial for Java EE 6 business component development using EJB 3.1, JPA 2 and CDI.
+					Besides covering the basics of EJB 3.1, this book includes in-depth EJB 3.1 internal implementation details, best practices, design patterns, and performance tuning tips.
+					The book also discusses using open source frameworks like Seam and Spring with EJB 3.1.
+Authors:		Debu Panda, Reza Rahman, Ryan Cuprak, Michael Remijan
+Categories:		Java
+
+Title:		Domino Development with Java
+ISBN:		1930110049
+The number of pages:		467
+The date of publishing:		2000-08-01T00:00:00.000-0700
+Authors:		Anthony Patton
+Categories:		Java
+
+Title:		Hibernate Quickly
+ISBN:		1932394419
+The number of pages:		456
+The date of publishing:		2005-08-01T00:00:00.000-0700
+Short description:	"If you want to learn Hibernate quickly, this book shows you step by step." - Sang Shin, Java Technology Architect, Sun Microsystems
+Authors:		Patrick Peak, Nick Heudecker
+Categories:		Java
+
+Title:		Lift in Action
+ISBN:		1935182803
+The number of pages:		450
+The date of publishing:		2011-11-18T00:00:00.000-0800
+Authors:		Timothy Perrett
+Categories:		Java
+
+Title:		JUnit Recipes
+ISBN:		1932394230
+The number of pages:		752
+The date of publishing:		2004-07-01T00:00:00.000-0700
+Authors:		J. B. Rainsberger with contributions by Scott Stirling
+Categories:		Java
+
+Title:		Clojure in Action
+ISBN:		1935182595
+The number of pages:		475
+The date of publishing:		2011-11-15T00:00:00.000-0800
+Short description:	Clojure in Action is a hands-on tutorial for the working programmer who has written code in a language like Java or Ruby, but has no prior experience with Lisp.
+					It teaches Clojure from the basics to advanced topics using practical, real-world application examples.
+					Blow through the theory and dive into practical matters like unit-testing, environment set up, all the way through building a scalable web-application using domain-specific languages, Hadoop, HBase, and RabbitMQ.
+Authors:		Amit Rathore
+Categories:		Java
+
+Title:		Scala in Action
+ISBN:		1935182757
+The date of publishing:		2013-04-09T00:00:00.000-0700
+Authors:		Nilanjan Raychaudhuri
+Categories:		Java
+
+Title:		Secrets of the JavaScript Ninja
+ISBN:		193398869X
+The number of pages:		300
+The date of publishing:		2012-12-27T00:00:00.000-0800
+Short description:	   Secrets of the Javascript Ninja is definitely a book for anyone looking to significantly improve their Javascript knowledge and skills.
+					      Ryan Doherty, Web Development Engineer, Mozilla
+Authors:		John Resig
+Categories:		Java
+
+Title:		Swing
+ISBN:		1884777848
+The date of publishing:		1999-12-01T00:00:00.000-0800
+Authors:		Matthew Robinson, Pavel Vorobiev
+Categories:		Java
+
+Title:		The Awesome Power of Java Beans
+ISBN:		1884777562
+The number of pages:		500
+The date of publishing:		1998-05-01T00:00:00.000-0700
+Authors:		Lawrence H. Rodrigues
+Categories:		Java
+
+Title:		SCBCD Exam Study Kit
+ISBN:		1932394400
+The number of pages:		488
+The date of publishing:		2005-06-01T00:00:00.000-0700
+Authors:		Paul Sanghera
+Categories:		Java
+
+Title:		Portlets in Action
+ISBN:		1935182544
+The number of pages:		475
+The date of publishing:		2011-09-16T00:00:00.000-0700
+Short description:	Portlets in Action is a comprehensive guide for Java developers with minimal or no experience working with portlets.
+					Fully exploring the Portlet 2.0 API and using widely adopted frameworks like Spring 3.0 Portlet MVC, Hibernate, and DWR, it teaches you portal and portlet development by walking you through a Book Catalog portlet and Book Portal examples.
+Authors:		Ashish Sarin
+Categories:		Java
+
+Title:		SWT/JFace in Action
+ISBN:		1932394273
+The number of pages:		496
+The date of publishing:		2004-11-01T00:00:00.000-0800
+Short description:	Guides you through the process of developing Eclipse-based GUIs and shows how to build applications with features your users will love.
+					Packed with examples and no fluff.
+Authors:		Matthew Scarpino, Stephen Holder, Stanford Ng, Laurent Mihalkovic
+Categories:		Java
+
+Title:		Java Applets and Channels Without Programming
+ISBN:		1884777392
+The number of pages:		372
+The date of publishing:		1999-12-01T00:00:00.000-0800
+Short description:	Java Applets and Channels Without Programming collects almost 100 applets on a CD with detailed instructions on how to use each applet.
+					In addition, style issues are discussed in detail; not only will you learn how to use each applet, you will learn when and where it is appropriate to use each applet.
+					The book also introduces the new concept of channels and shows how these can be used on your web site as well.
+
+Authors:		Ronny Richardson, Michael Shoffner, Marq Singer, Bruce Murray, Jack Gambol
+Categories:		Java
+
+Title:		ActiveMQ in Action
+ISBN:		1933988940
+The number of pages:		408
+The date of publishing:		2011-03-31T00:00:00.000-0700
+Short description:	ActiveMQ is implemented in Java, but it supports client applications written in many other programming languages including C/C++, .NET, Ruby, Perl, PHP, Python, and more.
+					It can be integrated with other open source frameworks including Tomcat, ServiceMix, JBoss, and can easily bridge to other JMS providers.
+
+Authors:		Bruce Snyder, Dejan Bosanac, Rob Davies
+Categories:		Java
+
+Title:		Scala in Depth
+ISBN:		1935182706
+The date of publishing:		2012-05-14T00:00:00.000-0700
+Short description:	Scala in Depth is a unique new book designed to help you integrate Scala effectively into your development process.
+					By presenting the emerging best practices and designs from the Scala community, it guides you though dozens of powerful techniques example by example.
+					There's no heavy-handed theory here-just lots of crisp, practical guides for coding in Scala.
+					   For example:        * Discover the "sweet spots" where object-oriented and functional programming intersect.
+					     * Master advanced OO features of Scala, including type member inheritance, multiple inheritance and composition.
+					     * Employ functional programming concepts like tail recursion, immutability, and monadic operations.
+					     * Learn good Scala style to keep your code concise, expressive and readable.
+					   As you dig into the book, you'll start to appreciate what makes Scala really shine.
+					For instance, the Scala type system is very, very powerful; this book provides use case approaches to manipulating the type system and covers how to use type constraints to enforce design constraints.
+					Java developers love Scala's deep integration with Java and the JVM Ecosystem, and this book shows you how to leverage it effectively and work around the rough spots.
+Authors:		Joshua D. Suereth
+Categories:		Java
+
+Title:		JMX in Action
+ISBN:		1930110561
+The number of pages:		424
+The date of publishing:		2002-09-01T00:00:00.000-0700
+Authors:		Benjamin G. Sullins, Mark B. Whipple
+Categories:		Java
+
+Title:		EJB Cookbook
+ISBN:		1930110944
+The number of pages:		352
+The date of publishing:		2003-05-01T00:00:00.000-0700
+Short description:	"This book provides a great reference for the average EJB developer.
+					It provides recipes for most common tasks that an EJB developer would need." -- Computing Reviews, Nov.
+					2003
+Authors:		Benjamin G. Sullins, Mark B. Whipple
+Categories:		Java
+
+Title:		GWT in Action, Second Edition
+ISBN:		1935182846
+The date of publishing:		2013-01-21T00:00:00.000-0800
+Authors:		Adam Tacy, Robert Hanson, Jason Essington, Anna Tökke
+Categories:		Java
+
+Title:		JUnit in Action, Second Edition
+ISBN:		1935182021
+The number of pages:		504
+The date of publishing:		2010-07-01T00:00:00.000-0700
+Short description:	JUnit in Action, Second Edition is an up-to-date guide to unit testing Java applications (including Java EE applications) using the JUnit framework and its extensions.
+					This book provides techniques for solving real-world problems such as testing AJAX applications, using mocks to achieve testing isolation, in-container testing for Java EE and database applications, and test automation.
+Authors:		Petar Tahchiev, Felipe Leme, Vincent Massol, Gary Gregory
+Categories:		Java
+
+Title:		Spring in Action
+ISBN:		1932394354
+The number of pages:		472
+The date of publishing:		2005-02-01T00:00:00.000-0800
+Short description:	Spring in Action introduces you to the ideas behind Spring and then quickly launches into a hands-on exploration of the framework.
+					Combining short code snippets and an ongoing example developed throughout the book, it shows you how to build simple and efficient J2EE applications.
+					You will see how to solve persistence problems using the leading open-source tools, and also how to integrate your application with the most popular web frameworks.
+					You will learn how to use Spring to manage the bulk of your infrastructure code so you can focus on what really matters     your critical business needs.
+Authors:		Craig Walls, Ryan Breidenbach
+Categories:		Java
+
+Title:		Spring in Action, Second Edition
+ISBN:		1933988134
+The number of pages:		768
+The date of publishing:		2007-08-01T00:00:00.000-0700
+Authors:		Craig Walls with Ryan Breidenbach
+Categories:		Java
+
+Title:		Spring in Action, Third Edition
+ISBN:		1935182358
+The number of pages:		424
+The date of publishing:		2011-06-21T00:00:00.000-0700
+Short description:	Spring in Action, Third Edition has been completely revised to reflect the latest features, tools, practices Spring offers to java developers.
+					It begins by introducing the core concepts of Spring and then quickly launches into a hands-on exploration of the framework.
+					Combining short code snippets and an ongoing example developed throughout the book, it shows you how to build simple and efficient J2EE applications.
+Authors:		Craig Walls
+Categories:		Java
+
+Process finished with exit code 0

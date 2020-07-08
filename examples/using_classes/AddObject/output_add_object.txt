@@ -1,0 +1,13 @@
+
+Assign the value to the descriptions (press <Enter> if you don't need the description):
+--------<Title>: JSONManipulator - A Decent Python library
+--------<ISBN>:
+--------<The number of pages>: 278
+--------<The date of publishing>: 08.07.2020
+--------<Short description>: A lightweight library for manipulating objects in JSON files.
+--------<Authors>: Andrew Polukhin
+--------<Categories>: Software Development
+
+Success!
+
+Process finished with exit code 0

@@ -1,0 +1,10 @@
+--------This function will add a new key to each object in your file--------
+Input all the data 'as is', press <Enter> in case you do not need the description.
+
+Enter your new key: reading_status
+Enter the description of your new key: Reading Status
+Enter the default value of your key: Not Read
+
+Success!
+
+Process finished with exit code 0
