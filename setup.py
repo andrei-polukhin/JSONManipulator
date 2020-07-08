@@ -12,6 +12,7 @@ setup(
     description="A Python package to manipulate objects in JSON files.",
     version="1.0",
     long_description=long_description,
+    long_description_content_type='text/markdown',
     author="Andrew Polukhin",
     author_email="andrewmathematics2003@gmail.com",
     license="MIT",
