@@ -1,23 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-NAME
-    JSONManipulator
-
-DESCRIPTION
-    A Python library to manipulate objects in JSON files.
-
-PACKAGE CONTENTS
-    set_up(full_path): initially set up the JSON file.
-    GetInformation(value, full_path, levenshtein=1.0, key=None,
-                 desc=None): retrieve information about specific objects.
-    ChangeValue(value, full_path, levenshtein=1.0, key=None,
-                 desc=None): change values of specific objects in the file.
-    AddObject(full_path): add a new object to the file.
-    DeleteObject(value, full_path, levenshtein=1.0, key=None,
-                 desc=None): delete specific objects in the file.
-    AddKey(full_path): add a new key to each object in the file.
-    ChangeAllValues(value, full_path): change values of all objects in the file.
-"""
+"""The JSONManipulator's core module with all the classes and functions."""
 
 import json
 import copy
@@ -74,9 +56,6 @@ def set_up(full_path) -> None:
         raise exceptions.NotSupportedJSONFile
 
 
-output_dict_container = list()
-
-
 class GetInformation:
     """The base class to retrieve the information about desired object(s).
 
@@ -118,7 +97,8 @@ class GetInformation:
              for ``list of dictionaries`` manipulations.
             None: else.
         """
-
+        global output_dict_container
+        output_dict_container = list()
         if not (self.key or self.desc):
             raise exceptions.NoKeyAndDesc
         try:
@@ -174,6 +154,7 @@ class GetInformation:
         and if the similarity is higher than ``self.levenshtein`` -
         append to the list for the further output."""
 
+        global output_dict_container
         while isinstance(dictionary_value, dict):
             dictionary_value = list(dictionary_value.values())[0]
 

@@ -1,3 +1,6 @@
+"""The JSONManipulator' exceptions."""
+
+
 class NoKeyAndDesc(Exception):
     """Raised when a user has entered neither key nor desc"""
 
