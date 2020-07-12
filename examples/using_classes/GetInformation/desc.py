@@ -1,4 +1,4 @@
-from JSONManipulator.core import GetInformation
+from JSONManipulator import GetInformation
 
 GetInformation(
     desc="Categories", value=["Java"],  # ``desc`` was specified by a user in set_up()

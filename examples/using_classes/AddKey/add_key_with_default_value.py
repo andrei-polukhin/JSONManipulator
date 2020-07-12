@@ -1,4 +1,4 @@
-from JSONManipulator.core import AddKey
+from JSONManipulator import AddKey
 
 AddKey(
     "/"

@@ -1,4 +1,4 @@
-from JSONManipulator.core import AddObject
+from JSONManipulator import AddObject
 
 AddObject(
     "/"

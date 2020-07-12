@@ -1,4 +1,4 @@
-from JSONManipulator.core import GetInformation
+from JSONManipulator import GetInformation
 
 GetInformation(
     key="authors", value="Glen Smith, Peter Ledbrook",

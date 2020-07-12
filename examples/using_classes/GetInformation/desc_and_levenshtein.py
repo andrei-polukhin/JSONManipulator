@@ -1,4 +1,4 @@
-from JSONManipulator.core import GetInformation
+from JSONManipulator import GetInformation
 
 GetInformation(
     desc="Title", value="Unlocing Android",

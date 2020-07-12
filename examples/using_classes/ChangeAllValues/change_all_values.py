@@ -1,4 +1,4 @@
-from JSONManipulator.core import ChangeAllValues
+from JSONManipulator import ChangeAllValues
 
 ChangeAllValues(
     "/"

@@ -1,4 +1,4 @@
-from JSONManipulator.core import ChangeValue
+from JSONManipulator import ChangeValue
 
 ChangeValue(
     key="title", value="Flex", levenshtein=0.3,  # to find all books with `Flex`

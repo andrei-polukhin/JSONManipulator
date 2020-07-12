@@ -1,4 +1,4 @@
-from JSONManipulator.core import DeleteObject
+from JSONManipulator import DeleteObject
 
 DeleteObject(
     key="isbn", value=1935182927,
