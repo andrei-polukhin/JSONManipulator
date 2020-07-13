@@ -23,4 +23,4 @@ from JSONManipulator.core import *
 
 __author__ = """Andrew Polukhin"""
 __email__ = """andrewmathematics2003@gmail.com"""
-__version__ = """1.0"""
+__version__ = """2.0"""
