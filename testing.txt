@@ -1,0 +1,42 @@
+Title
+ISBN
+Number of pages
+Date of publishing
+
+Short description
+
+
+Authors
+Categories
+reading_status
+Reading Status
+
+rating
+Rating
+Unknown
+technical_info
+
+Access granted
+My perfect book
+578985
+
+
+
+['Andrew Polukhin', 'Vladyslav Ovchynnykov']
+To my unaware tutor
+y
+
+
+
+
+
+Hidden
+Added Python book: Renewed
+del
+
+
+
+y
+all
+1-2,3
+1

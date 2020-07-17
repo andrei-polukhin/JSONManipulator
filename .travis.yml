@@ -5,6 +5,6 @@ install:
   - pip install -U tox-travis
   - pip install -U setuptools && pip install tox tox-travis coveralls
 script:
-  - tox
+  - tox < testing.txt
 after_success:
   - coveralls
