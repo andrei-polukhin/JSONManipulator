@@ -1,6 +1,10 @@
+import sys
+import os
+
 from JSONManipulator import AddKey
 
 AddKey(
-    "/"
-    "/examples/using_classes/AddKey/books_with_added_key.json"  # specify your path.
+    os.path.join(
+                sys.path[0], "examples/using_classes/AddKey/books_with_added_key.json"
+            )
 )

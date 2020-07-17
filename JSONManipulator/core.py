@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
+
 """The JSONManipulator's core module with all the classes and functions."""
 
+import sys
 import json
 import copy
 from typing import List, Dict
@@ -10,20 +12,22 @@ import JSONManipulator.exceptions as exceptions
 
 
 def set_up(full_path) -> None:
-    """Configure the initial *.json file.
-    Add descriptions for the keys in the file
-    for the further more readable retrieval.
+    """Configure the initial JSON file. Add descriptions for the keys in \
+    the JSON file for the further more readable retrieval.
 
     Args:
-        full_path (str): path to the desired file.
+        ``full_path (str)``: the path to the desired file.
 
     Raises:
-        FileNotFoundError:
-         if the file is not found by ``full_path``.
-        IsADirectoryError:
-         if ``full_path`` is for a directory, not for the file.
-        exception.NotSupportedJSONFile:
-         if the file is not supported by the package.
+        ``FileNotFoundError``: \
+        if the JSON file is not found by ``full_path``.
+
+        ``IsADirectoryError``: \
+        if ``full_path`` is to a directory, not to the JSON file.
+
+        ``exception.NotSupportedJSONFile``: \
+        if the JSON file is not supported by the package.
+
     """
 
     with open(full_path, 'r') as file:
@@ -54,27 +58,32 @@ def set_up(full_path) -> None:
         print("\nSuccess!")
     else:
         raise exceptions.NotSupportedJSONFile
+    sys.exit(0)
 
 
 class GetInformation:
     """The base class to retrieve the information about desired object(s).
 
     Args:
-        key (str): to find the object by the key in the *.json file.
-        desc (str): to find the object by the description.
-        full_path (str): the full path to the *.json file.
-        value (str): the value of the key/desc
-         which will be used to find the object(s).
-        levenshtein (float): the similarity of the elicited objects
-         to the input. By default, seeks 100% similarity.
+        ``key (str)``: to find the object by the key in the JSON file.\n
+        ``desc (str)``: to find the object by the description.\n
+        ``full_path (str)``: the full path to the JSON file.\n
+        ``value (str)``: the value of ``key``/``desc`` \
+        which will be used to find the object(s).\n
+        ``levenshtein (float)``: the similarity of the elicited objects \
+        to the input. By default, seeks 100% similarity.\n
 
     Raises:
-        exceptions.EnterKeyOrDesc:
-         if neither ``key`` nor ``desc`` is entered.
-        FileNotFoundError: if the file is not found by the ``full_path``.
-        IsADirectoryError:
-         if ``full_path`` is for a directory, not for the file.
+        ``exceptions.NoKeyAndDesc``: \
+        if neither ``key`` nor ``desc`` is entered.\n
+        ``FileNotFoundError``: \
+        if the JSON file is not found by ``full_path``.\n
+        ``IsADirectoryError``: \
+        if ``full_path`` is to a directory, not to the JSON file.\n
     """
+
+    __slots__ = ["value", "full_path", "levenshtein", "key",
+                 "desc", "output_dict_container"]
 
     def __init__(self, value, full_path, levenshtein=1.0, key=None,
                  desc=None):
@@ -83,22 +92,22 @@ class GetInformation:
         self.levenshtein = levenshtein
         self.key = key
         self.full_path = full_path
+        self.output_dict_container = []
         if self.__class__ == GetInformation:
-            #  Calls the function if not inherited.
+            #  Call the function if not inherited.
             self.get_information()
 
     def get_information(self) -> List[Dict] or None:
-        """Process the user's parameters and the *.json file's values,
-        after which call additional in-class functions
-        to analyse data and output objects, accordingly.
+        """Process the user's parameters and the JSON file's values, \
+        then call additional in-class functions to analyse data \
+        and output objects, accordingly.
 
         Returns:
-            List[Dict]: if ``GetInformation`` is a parent class -
-             for ``list of dictionaries`` manipulations.
-            None: else.
+            ``List[Dict]``: if ``GetInformation`` is a parent class - \
+            for ``list of dictionaries`` manipulations.\n
+            ``None``: else.
         """
-        global output_dict_container
-        output_dict_container = list()
+
         if not (self.key or self.desc):
             raise exceptions.NoKeyAndDesc
         try:
@@ -108,7 +117,7 @@ class GetInformation:
             raise FileNotFoundError("Check the path to your file")
         except IsADirectoryError:
             raise IsADirectoryError(
-                "You have specified the directory, not the path to the file."
+                "You have specified the directory, not the path to the JSON file."
             )
         else:
             if isinstance(self.value, list):
@@ -120,7 +129,7 @@ class GetInformation:
 
             if isinstance(self.value, (str, int, float)):
                 if isinstance(self.value, str) and ", " in self.value \
-                        and self.cap_sentence():
+                        and self.cap_sentence(self.value):
                     self.value = self.value.upper().strip().split(", ")
                 else:
                     str_value = str(self.value)
@@ -132,7 +141,7 @@ class GetInformation:
                         temporary_key = dictionary[self.key]
                         self.levenshtein_calc(temporary_key, dictionary)
                         continue
-                self.output_for_key_and_value(output_dict_container)
+                self.output_for_key_and_value()
 
             elif self.desc and self.value:
                 for dictionary in file_contents:
@@ -140,21 +149,21 @@ class GetInformation:
                         if isinstance(value, dict):
                             for key, end_value in value.items():
                                 if key == self.desc:
-                                    temporary_key = end_value
-                                    self.levenshtein_calc(temporary_key, dictionary)
+                                    self.levenshtein_calc(end_value, dictionary)
                                     continue
 
-                self.output_for_key_and_value(output_dict_container)
+                self.output_for_key_and_value()
 
         if self.__class__ != GetInformation:
-            return output_dict_container
+            return self.output_dict_container
+        sys.exit(0)
 
     def levenshtein_calc(self, dictionary_value, dictionary) -> None:
-        """Compare processed ``self.value`` and ``dictionary_value``,
-        and if the similarity is higher than ``self.levenshtein`` -
-        append to the list for the further output."""
+        """Compare processed ``object.value`` and ``dictionary_value``, \
+        and if the similarity is higher than ``object.levenshtein`` \
+        - append to the list for the further output.
+        """
 
-        global output_dict_container
         while isinstance(dictionary_value, dict):
             dictionary_value = list(dictionary_value.values())[0]
 
@@ -180,22 +189,24 @@ class GetInformation:
             ).ratio()
 
             similarity_of_words = (
-                SequenceMatcher(None, dictionary_value[i],
-                                self.value[i]).ratio() >=
-                self.levenshtein for i in range(short_list)
+                SequenceMatcher(
+                    None, dictionary_value[i],
+                    self.value[i]
+                ).ratio() >= self.levenshtein
+                for i in range(short_list)
             )
 
             if 1 >= short_list / long_list >= 0.8 * self.levenshtein \
                     and similarity_of_lists >= 0.6 * self.levenshtein \
                     and all(similarity_of_words):
-                output_dict_container.append(dictionary)
+                self.output_dict_container.append(dictionary)
 
-    @staticmethod
-    def output_for_key_and_value(list_container) -> None:
-        """Process ``list_container`` from ``levenshtein_calc()``,
-        beautify the output of the objects."""
+    def output_for_key_and_value(self) -> None:
+        """Process ``object.output_dict_container`` from ``levenshtein_calc()``, \
+        beautify the output of the objects.
+        """
 
-        for dict_in_list in list_container:
+        for dict_in_list in self.output_dict_container:
             print()
             for value in dict_in_list.values():
                 if isinstance(value, dict):
@@ -220,53 +231,57 @@ class GetInformation:
                         if exact_value:
                             print(f"{description}:\t\t{exact_value}")
                             continue
-        if not list_container:
+        if not self.output_dict_container:
             print("No objects found.")
 
-    def cap_sentence(self) -> bool:
-        """Check if ``string`` looks like person's first or/and last names.
+    @staticmethod
+    def cap_sentence(string) -> bool:
+        """Check if ``string`` looks like a person's first, middle or/and last names.
 
         Returns:
-            True: if the entered data is about a person.
-            False: else.
+            ``True``: if the entered data is about a person.\n
+            ``False``: else.
         """
 
-        str_for_check = " ".join(w[:1].upper() + w[1:] for w in self.value.split(" "))
-        return str_for_check == self.value
+        str_for_check = " ".join(w[:1].upper() + w[1:] for w in string.split(" "))
+        return str_for_check == string
 
 
 class ChangeValue(GetInformation):
-    """A child class of ``GetInformation``
-    to change values simultaneously of found dictionary(-ies).
+    """A child class of ``GetInformation`` \
+    to change values of found dictionary(-ies) simultaneously.
 
     Args:
-        key (str): to find the object by the key in the *.json file.
-        desc (str): to find the object by the description.
-        full_path (str): the full path to the *.json file.
-        value (str): the value of the key/desc
-         which will be used to find the object(s).
-        levenshtein (float): the similarity of the elicited objects
-         to the input. By default, seeks 100% similarity.
+        ``key (str)``: to find the object by the key in the JSON file.\n
+        ``desc (str)``: to find the object by the description.\n
+        ``full_path (str)``: the full path to the JSON file.\n
+        ``value (str)``: the value of ``key``/``desc`` \
+        which will be used to find the object(s).\n
+        ``levenshtein (float)``: the similarity of the elicited objects \
+        to the input. By default, seeks 100% similarity.
 
     Raises:
-        exceptions.EnterKeyOrDesc:
-         if neither ``key`` nor ``desc`` is entered.
-        FileNotFoundError:
-         if the file is not found by the ``full_path``.
-        IsADirectoryError:
-         if ``full_path`` is for a directory, not for the file.
+        ``exceptions.NoKeyAndDesc``: \
+        if neither ``key`` nor ``desc`` is entered.\n
+        ``FileNotFoundError``: \
+        if the JSON file is not found by ``full_path``.\n
+        ``IsADirectoryError``: \
+        if ``full_path`` is to a directory, not to the JSON file.
     """
+
+    __slots__ = ["value", "full_path", "levenshtein", "key", "desc"]
 
     def __init__(self, value, full_path, levenshtein=1.0, key=None,
                  desc=None):
         super().__init__(value, full_path, levenshtein, key, desc)
         if self.__class__ == ChangeValue:
-            #  Calls the function if not inherited.
+            #  Call the function if not inherited.
             self.change_value()
 
     def change_value(self) -> None:
-        """Inheritably call ``get_information()``, then call additional
-        in-class functions to change values of object(s)."""
+        """Inheritably call ``get_information()``, \
+        then call additional in-class functions to change values of the object(s).
+        """
 
         dictionary_container: list = self.get_information()
 
@@ -313,10 +328,10 @@ class ChangeValue(GetInformation):
 
             else:
                 print("Sorry, check your input.")
+        sys.exit(0)
 
     def change_one_object(self, start_dictionary) -> None:
-        """Change user-chosen values from the object -
-        ``start_dictionary``."""
+        """Change user-chosen values from the object - ``start_dictionary``."""
 
         changed_dictionary = copy.deepcopy(start_dictionary)
 
@@ -349,8 +364,8 @@ class ChangeValue(GetInformation):
         print("\nSuccess!")
 
     def change_several_objects(self, start_list_dictionaries) -> None:
-        """Change several objects from ``start_list_dictionaries``
-        simultaneously."""
+        """Change several objects from ``start_list_dictionaries`` simultaneously.
+        """
 
         changed_list_dictionaries = copy.deepcopy(start_list_dictionaries)
         shortest_dict = min(changed_list_dictionaries, key=len)
@@ -396,18 +411,15 @@ class ChangeValue(GetInformation):
 
     @staticmethod
     def format_several_objects(user_option, dictionary_container) -> List[Dict]:
-        """Process ``user_option`` and take several
-        user-chosen objects from ``dictionary_container``.
+        """Process ``user_option`` \
+        and take user-chosen objects from ``dictionary_container``.
 
         Args:
-            user_option (str): numbers of chosen dictionaries,
-             for example "2-4,10".
-            dictionary_container (list): the list to take
-             dictionaries from.
+            ``user_option (str)``: numbers of chosen dictionaries, for example, "2-4,10".
+            ``dictionary_container (list)``: the list to take dictionaries from.
 
         Returns:
-            List[Dict]: the list of dictionaries which values
-             it is necessary to change.
+            ``List[Dict]``: the list of dictionaries which values it is necessary to change.
         """
 
         user_option = user_option.replace("(", "").replace(")", "")
@@ -419,7 +431,7 @@ class ChangeValue(GetInformation):
 
         if len(user_option) > 1 or \
                 (len(user_option) == 1 and isinstance(user_option[0], list)):
-            initial_dictionary_list = list()
+            initial_dictionary_list = []
             for element in user_option:
                 if isinstance(element, str) and element.isdecimal():
                     initial_dictionary_list.append(
@@ -430,7 +442,7 @@ class ChangeValue(GetInformation):
                         and int(element[0]) < int(element[1]):
                     extend_list = dictionary_container[
                                   int(element[0]) - 1: int(element[1])
-                                  ]
+                                ]
                     initial_dictionary_list.extend(extend_list)
 
                 else:
@@ -441,7 +453,7 @@ class ChangeValue(GetInformation):
     @staticmethod
     def if_clauses(type_value, changed_dictionary,
                    key_in_initial_dict, desc, new_value) -> None:
-        """Set new values to the objects."""
+        """Set new values to the objects in the JSON file."""
 
         if isinstance(type_value, (str, int, dict)):
             changed_dictionary[key_in_initial_dict] = {desc: new_value}
@@ -455,10 +467,10 @@ class ChangeValue(GetInformation):
 
 
 class AddObject:
-    """A class to add a new object to the file.
+    """A class to add a new object to the JSON file.
 
     Args:
-        full_path (str): the full path to the *.json file.
+        ``full_path (str)``: the full path to the JSON file.
     """
 
     def __init__(self, full_path):
@@ -466,7 +478,7 @@ class AddObject:
         self.add_object()
 
     def add_object(self) -> None:
-        """Add an object to the file."""
+        """Add an object to the JSON file."""
 
         print("\nAssign the value to the descriptions "
               "(press <Enter> if you don\'t need the description):")
@@ -495,28 +507,31 @@ class AddObject:
                 json.dump(file_contents, file)
 
             print("\nSuccess!")
+        sys.exit(0)
 
 
 class DeleteObject(ChangeValue):
     """A class to delete found objects.
 
     Args:
-        key (str): to find the object by the key in the *.json file.
-        desc (str): to find the object by the description.
-        full_path (str): the full path to the *.json file.
-        value (str): the value of the key/desc
-         which will be used to find the object(s).
-        levenshtein (float): the similarity of the elicited objects
-         to the input. By default, seeks 100% similarity.
+        ``key (str)``: to find the object by the key in the JSON file.\n
+        ``desc (str)``: to find the object by the description.\n
+        ``full_path (str)``: the full path to the JSON file.\n
+        ``value (str)``: the value of ``key``/``desc`` \
+        which will be used to find the object(s).\n
+        ``levenshtein (float)``: the similarity of the elicited objects \
+        to the input. By default, seeks 100% similarity.
 
     Raises:
-        exceptions.EnterKeyOrDesc:
-         if neither ``key`` nor ``desc`` is entered.
-        FileNotFoundError:
-         if the file is not found by the ``full_path``.
-        IsADirectoryError:
-         if ``full_path`` is for a directory, not for the file.
+        ``exceptions.NoKeyAndDesc``: \
+        if neither ``key`` nor ``desc`` is entered.\n
+        ``FileNotFoundError``: \
+        if the JSON file is not found by ``full_path``.\n
+        ``IsADirectoryError``: \
+        if ``full_path`` is to a directory, not to the JSON file.
     """
+
+    __slots__ = ["value", "full_path", "levenshtein", "key", "desc"]
 
     def __init__(self, value, full_path, levenshtein=1.0, key=None,
                  desc=None):
@@ -524,16 +539,16 @@ class DeleteObject(ChangeValue):
         self.delete_object()
 
     def delete_object(self) -> None:
-        """Take the list of objects, after a user chose ones to delete,
-        call ``execute_delete()`` function."""
+        """Take the list of objects, after a user chose ones to delete, \
+        call ``execute_delete()`` function.
+        """
 
         dictionary_container: list = self.get_information()
 
         if len(dictionary_container) == 1:
             option = input("\nDelete the object (Y/n)? ")
             if option.lower() in ["y", "yes"]:
-                execution_container = dictionary_container
-                self.execute_delete(execution_container)
+                self.execute_delete(dictionary_container)
 
         elif len(dictionary_container) > 1:
             print("\n\n----Use this function if you want to delete "
@@ -547,13 +562,13 @@ class DeleteObject(ChangeValue):
             )
 
             if option.isdecimal() and len(dictionary_container) >= int(option) >= 1:
-                execution_container = dictionary_container[int(option) - 1]
+                execution_dict = dictionary_container[int(option) - 1]
+                execution_container = [execution_dict]
 
                 self.execute_delete(execution_container)
             elif option.lower() in ["all", "\'all\'"]:
-                execution_container = dictionary_container
+                self.execute_delete(dictionary_container)
 
-                self.execute_delete(execution_container)
             elif self.format_several_objects(option, dictionary_container):
                 execution_container = self.format_several_objects(
                     option, dictionary_container
@@ -562,6 +577,7 @@ class DeleteObject(ChangeValue):
                 self.execute_delete(execution_container)
             else:
                 print("\nSorry, check your input.")
+        sys.exit(0)
 
     def execute_delete(self, dict_container) -> None:
         """Delete redundant objects."""
@@ -582,25 +598,29 @@ class DeleteObject(ChangeValue):
 
 
 class AddKey:
-    """A class to add a new key to each object.
+    """A class to add a new key to each object in the JSON file.
 
     Args:
-        full_path (str): the full path to the *.json file.
+        ``full_path (str)``: the full path to the JSON file.
 
     Raises:
-        FileNotFoundError:
-         if the file is not found by ``full_path``.
-        IsADirectoryError:
-         if ``full_path`` is for a directory, not for the file.
+        ``FileNotFoundError``: \
+        if the JSON file is not found by ``full_path``.\n
+        ``IsADirectoryError``: \
+        if ``full_path`` is to a directory, not to the JSON file.
     """
 
     def __init__(self, full_path):
         self.full_path = full_path
+        self.input_key = ""
+        self.input_desc = ""
+        self.default_value = ""
         self.add_key()
 
     def add_key(self) -> None:
-        """Add a key to each object in the file, optionally with description,
-        with a default value."""
+        """Add a key to each object in the JSON file, \
+        optionally with a description, with a default value.
+        """
 
         print(
             "--------This function will add "
@@ -609,29 +629,29 @@ class AddKey:
             "in case you do not need the description.\n"
         )
 
-        input_key = input("Enter your new key: ")
-        input_desc = input("Enter the description of your new key: ")
-        default_value = input("Enter the default value of your key: ")
+        self.input_key = input("Enter your new key: ")
+        self.input_desc = input("Enter the description of your new key: ")
+        self.default_value = input("Enter the default value of your key: ")
 
         with open(self.full_path, 'r') as file:
             file_contents = json.load(file)
 
-        if input_key and input_desc:
+        if self.input_key and self.input_desc:
             for dictionary in file_contents:
-                if not dictionary.get(input_key):
-                    dictionary[input_key] = {input_desc: default_value}
-                elif dictionary.get(input_key):
+                if not dictionary.get(self.input_key):
+                    dictionary[self.input_key] = {self.input_desc: self.default_value}
+                elif dictionary.get(self.input_key):
                     print("\nSorry, your key already exists. "
                           "Try our ChangeAllValues functionality instead.")
                     break
             else:
                 print("\nSuccess!")
 
-        elif input_key and not input_desc:
+        elif self.input_key and not self.input_desc:
             for dictionary in file_contents:
-                if not dictionary.get(input_key):
-                    dictionary[input_key] = default_value
-                elif dictionary.get(input_key):
+                if not dictionary.get(self.input_key):
+                    dictionary[self.input_key] = self.default_value
+                elif dictionary.get(self.input_key):
                     print("\nSorry, your key already exists. "
                           "Try our ChangeAllValues functionality instead.")
                     break
@@ -643,20 +663,22 @@ class AddKey:
 
         with open(self.full_path, 'w') as file:
             json.dump(file_contents, file)
+        sys.exit(0)
 
 
 class ChangeAllValues(ChangeValue):
-    """A class to change values of all objects in the file.
+    """A class to change values of all objects in the JSON file.
 
     Args:
-        value (str):
-         a redundant parameter, exists as mandatory in the parent class.
-        full_path (str): the full path to the *.json file.
+        ``value (str)``: a redundant parameter, \
+        exists as mandatory in the parent class.\n
+        ``full_path (str)``: the full path to the JSON file.\n
 
     Raises:
-        FileNotFoundError: if the file is not found by ``full_path``.
-        IsADirectoryError: if ``full_path`` is for a directory,
-         not for the file.
+        ``FileNotFoundError``: \
+        if the JSON file is not found by ``full_path``.\n
+        ``IsADirectoryError``: \
+        if ``full_path`` is to a directory, not to the JSON file.
     """
 
     def __init__(self, full_path, value=""):
@@ -664,7 +686,7 @@ class ChangeAllValues(ChangeValue):
         self.change_all_values()
 
     def change_all_values(self) -> None:
-        """Change the values of all objects in the file."""
+        """Change the values of all objects in the JSON file."""
 
         print(
             "--------Use this "
@@ -686,3 +708,4 @@ class ChangeAllValues(ChangeValue):
             self.change_several_objects(file_contents)
         else:
             print("Process terminated.")
+        sys.exit(0)

@@ -1,18 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""The setup script"""
+"""The setup script."""
 from setuptools import setup, find_packages
 
-with open("README.md", 'r') as file:
-    long_description = file.read()
+with open("README.rst", 'r') as file:
+    readme = file.read()
+
+with open("HISTORY.rst", 'r') as hist:
+    history = hist.read()
+
+long_description = readme + "\n\n" + history
+
 
 setup(
     name="JSONManipulator",
     description="A Python package to manipulate objects in JSON files.",
-    version="2.0",
+    url="https://github.com/pandrey2003/JSONManipulator",
+    version="3.0",
     long_description=long_description,
-    long_description_content_type='text/markdown',
     author="Andrew Polukhin",
     author_email="andrewmathematics2003@gmail.com",
     license="MIT",
@@ -22,7 +28,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English'
     ],
-    keywords="JSON Objects Manipulation Tool",
-    python_requires="~=3.6",
+    keywords="JSON Objects Manipulation",
+    python_requires="~=3.8",
     packages=find_packages()
 )

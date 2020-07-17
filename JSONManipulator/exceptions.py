@@ -1,8 +1,10 @@
-"""The JSONManipulator' exceptions."""
+# -*- coding: utf-8 -*-
+
+"""The JSONManipulator's exceptions."""
 
 
 class NoKeyAndDesc(Exception):
-    """Raised when a user has entered neither key nor desc"""
+    """Raised when a user has entered neither key nor desc."""
 
     def __init__(self):
         super().__init__(
@@ -12,7 +14,8 @@ class NoKeyAndDesc(Exception):
 
 
 class NotSupportedJSONFile(Exception):
-    """Raised when the JSON file's structure does not confront to [{...},{...},...]"""
+    """Raised when the JSON file's structure \
+    does not confront to [{...},{...},...]."""
 
     def __init__(self):
         super().__init__(

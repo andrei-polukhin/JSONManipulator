@@ -1,0 +1,580 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>JSONManipulator package &mdash; JSONManipulator 2.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="JSONManipulator" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> JSONManipulator
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">JSONManipulator</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">JSONManipulator package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-JSONManipulator.core">JSONManipulator.core module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-JSONManipulator.exceptions">JSONManipulator.exceptions module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-JSONManipulator">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">JSONManipulator</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">JSONManipulator</a> &raquo;</li>
+        
+      <li>JSONManipulator package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/JSONManipulator.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="jsonmanipulator-package">
+<h1>JSONManipulator package<a class="headerlink" href="#jsonmanipulator-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-JSONManipulator.core">
+<span id="jsonmanipulator-core-module"></span><h2>JSONManipulator.core module<a class="headerlink" href="#module-JSONManipulator.core" title="Permalink to this headline">¶</a></h2>
+<p>The JSONManipulator’s core module with all the classes and functions.</p>
+<dl class="py class">
+<dt id="JSONManipulator.core.AddKey">
+<em class="property">class </em><code class="sig-prename descclassname">JSONManipulator.core.</code><code class="sig-name descname">AddKey</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">full_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#JSONManipulator.core.AddKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class to add a new key to each object in the JSON file.</p>
+<dl>
+<dt>Args:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">full_path</span> <span class="pre">(str)</span></code>: the full path to the JSON file.</p>
+</dd>
+<dt>Raises:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">FileNotFoundError</span></code>:         if the JSON file is not found by <code class="docutils literal notranslate"><span class="pre">full_path</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">IsADirectoryError</span></code>:         if <code class="docutils literal notranslate"><span class="pre">full_path</span></code> is to a directory, not to the JSON file.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="JSONManipulator.core.AddKey.add_key">
+<code class="sig-name descname">add_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.AddKey.add_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a key to each object in the JSON file,         optionally with a description, with a default value.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="JSONManipulator.core.AddObject">
+<em class="property">class </em><code class="sig-prename descclassname">JSONManipulator.core.</code><code class="sig-name descname">AddObject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">full_path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#JSONManipulator.core.AddObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class to add a new object to the JSON file.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">full_path</span> <span class="pre">(str)</span></code>: the full path to the JSON file.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="JSONManipulator.core.AddObject.add_object">
+<code class="sig-name descname">add_object</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.AddObject.add_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an object to the JSON file.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="JSONManipulator.core.ChangeAllValues">
+<em class="property">class </em><code class="sig-prename descclassname">JSONManipulator.core.</code><code class="sig-name descname">ChangeAllValues</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">full_path</span></em>, <em class="sig-param"><span class="n">value</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#JSONManipulator.core.ChangeAllValues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#JSONManipulator.core.ChangeValue" title="JSONManipulator.core.ChangeValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">JSONManipulator.core.ChangeValue</span></code></a></p>
+<p>A class to change values of all objects in the JSON file.</p>
+<dl>
+<dt>Args:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">value</span> <span class="pre">(str)</span></code>: a redundant parameter,         exists as mandatory in the parent class.</p>
+<p><code class="docutils literal notranslate"><span class="pre">full_path</span> <span class="pre">(str)</span></code>: the full path to the JSON file.</p>
+</dd>
+<dt>Raises:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">FileNotFoundError</span></code>:         if the JSON file is not found by <code class="docutils literal notranslate"><span class="pre">full_path</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">IsADirectoryError</span></code>:         if <code class="docutils literal notranslate"><span class="pre">full_path</span></code> is to a directory, not to the JSON file.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="JSONManipulator.core.ChangeAllValues.change_all_values">
+<code class="sig-name descname">change_all_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.ChangeAllValues.change_all_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the values of all objects in the JSON file.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.ChangeAllValues.desc">
+<code class="sig-name descname">desc</code><a class="headerlink" href="#JSONManipulator.core.ChangeAllValues.desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.ChangeAllValues.full_path">
+<code class="sig-name descname">full_path</code><a class="headerlink" href="#JSONManipulator.core.ChangeAllValues.full_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.ChangeAllValues.key">
+<code class="sig-name descname">key</code><a class="headerlink" href="#JSONManipulator.core.ChangeAllValues.key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.ChangeAllValues.levenshtein">
+<code class="sig-name descname">levenshtein</code><a class="headerlink" href="#JSONManipulator.core.ChangeAllValues.levenshtein" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.ChangeAllValues.value">
+<code class="sig-name descname">value</code><a class="headerlink" href="#JSONManipulator.core.ChangeAllValues.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="JSONManipulator.core.ChangeValue">
+<em class="property">class </em><code class="sig-prename descclassname">JSONManipulator.core.</code><code class="sig-name descname">ChangeValue</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">full_path</span></em>, <em class="sig-param"><span class="n">levenshtein</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">desc</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#JSONManipulator.core.ChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#JSONManipulator.core.GetInformation" title="JSONManipulator.core.GetInformation"><code class="xref py py-class docutils literal notranslate"><span class="pre">JSONManipulator.core.GetInformation</span></code></a></p>
+<p>A child class of <code class="docutils literal notranslate"><span class="pre">GetInformation</span></code>     to change values of found dictionary(-ies) simultaneously.</p>
+<dl>
+<dt>Args:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">(str)</span></code>: to find the object by the key in the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">desc</span> <span class="pre">(str)</span></code>: to find the object by the description.</p>
+<p><code class="docutils literal notranslate"><span class="pre">full_path</span> <span class="pre">(str)</span></code>: the full path to the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">value</span> <span class="pre">(str)</span></code>: the value of <code class="docutils literal notranslate"><span class="pre">key</span></code>/<code class="docutils literal notranslate"><span class="pre">desc</span></code>         which will be used to find the object(s).</p>
+<p><code class="docutils literal notranslate"><span class="pre">levenshtein</span> <span class="pre">(float)</span></code>: the similarity of the elicited objects         to the input. By default, seeks 100% similarity.</p>
+</dd>
+<dt>Raises:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">exceptions.NoKeyAndDesc</span></code>:         if neither <code class="docutils literal notranslate"><span class="pre">key</span></code> nor <code class="docutils literal notranslate"><span class="pre">desc</span></code> is entered.</p>
+<p><code class="docutils literal notranslate"><span class="pre">FileNotFoundError</span></code>:         if the JSON file is not found by <code class="docutils literal notranslate"><span class="pre">full_path</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">IsADirectoryError</span></code>:         if <code class="docutils literal notranslate"><span class="pre">full_path</span></code> is to a directory, not to the JSON file.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="JSONManipulator.core.ChangeValue.change_one_object">
+<code class="sig-name descname">change_one_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_dictionary</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.ChangeValue.change_one_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change user-chosen values from the object - <code class="docutils literal notranslate"><span class="pre">start_dictionary</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="JSONManipulator.core.ChangeValue.change_several_objects">
+<code class="sig-name descname">change_several_objects</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_list_dictionaries</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.ChangeValue.change_several_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change several objects from <code class="docutils literal notranslate"><span class="pre">start_list_dictionaries</span></code> simultaneously.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="JSONManipulator.core.ChangeValue.change_value">
+<code class="sig-name descname">change_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.ChangeValue.change_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inheritably call <code class="docutils literal notranslate"><span class="pre">get_information()</span></code>,         then call additional in-class functions to change values of the object(s).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.ChangeValue.desc">
+<code class="sig-name descname">desc</code><a class="headerlink" href="#JSONManipulator.core.ChangeValue.desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="JSONManipulator.core.ChangeValue.format_several_objects">
+<em class="property">static </em><code class="sig-name descname">format_several_objects</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">user_option</span></em>, <em class="sig-param"><span class="n">dictionary_container</span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>Dict<span class="p">]</span><a class="headerlink" href="#JSONManipulator.core.ChangeValue.format_several_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process <code class="docutils literal notranslate"><span class="pre">user_option</span></code>         and take user-chosen objects from <code class="docutils literal notranslate"><span class="pre">dictionary_container</span></code>.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">user_option</span> <span class="pre">(str)</span></code>: numbers of chosen dictionaries, for example, “2-4,10”.
+<code class="docutils literal notranslate"><span class="pre">dictionary_container</span> <span class="pre">(list)</span></code>: the list to take dictionaries from.</p>
+</dd>
+<dt>Returns:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">List[Dict]</span></code>: the list of dictionaries which values it is necessary to change.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.ChangeValue.full_path">
+<code class="sig-name descname">full_path</code><a class="headerlink" href="#JSONManipulator.core.ChangeValue.full_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="JSONManipulator.core.ChangeValue.if_clauses">
+<em class="property">static </em><code class="sig-name descname">if_clauses</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">type_value</span></em>, <em class="sig-param"><span class="n">changed_dictionary</span></em>, <em class="sig-param"><span class="n">key_in_initial_dict</span></em>, <em class="sig-param"><span class="n">desc</span></em>, <em class="sig-param"><span class="n">new_value</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.ChangeValue.if_clauses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set new values to the objects in the JSON file.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.ChangeValue.key">
+<code class="sig-name descname">key</code><a class="headerlink" href="#JSONManipulator.core.ChangeValue.key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.ChangeValue.levenshtein">
+<code class="sig-name descname">levenshtein</code><a class="headerlink" href="#JSONManipulator.core.ChangeValue.levenshtein" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.ChangeValue.value">
+<code class="sig-name descname">value</code><a class="headerlink" href="#JSONManipulator.core.ChangeValue.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="JSONManipulator.core.DeleteObject">
+<em class="property">class </em><code class="sig-prename descclassname">JSONManipulator.core.</code><code class="sig-name descname">DeleteObject</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">full_path</span></em>, <em class="sig-param"><span class="n">levenshtein</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">desc</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#JSONManipulator.core.DeleteObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#JSONManipulator.core.ChangeValue" title="JSONManipulator.core.ChangeValue"><code class="xref py py-class docutils literal notranslate"><span class="pre">JSONManipulator.core.ChangeValue</span></code></a></p>
+<p>A class to delete found objects.</p>
+<dl>
+<dt>Args:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">(str)</span></code>: to find the object by the key in the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">desc</span> <span class="pre">(str)</span></code>: to find the object by the description.</p>
+<p><code class="docutils literal notranslate"><span class="pre">full_path</span> <span class="pre">(str)</span></code>: the full path to the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">value</span> <span class="pre">(str)</span></code>: the value of <code class="docutils literal notranslate"><span class="pre">key</span></code>/<code class="docutils literal notranslate"><span class="pre">desc</span></code>         which will be used to find the object(s).</p>
+<p><code class="docutils literal notranslate"><span class="pre">levenshtein</span> <span class="pre">(float)</span></code>: the similarity of the elicited objects         to the input. By default, seeks 100% similarity.</p>
+</dd>
+<dt>Raises:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">exceptions.NoKeyAndDesc</span></code>:         if neither <code class="docutils literal notranslate"><span class="pre">key</span></code> nor <code class="docutils literal notranslate"><span class="pre">desc</span></code> is entered.</p>
+<p><code class="docutils literal notranslate"><span class="pre">FileNotFoundError</span></code>:         if the JSON file is not found by <code class="docutils literal notranslate"><span class="pre">full_path</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">IsADirectoryError</span></code>:         if <code class="docutils literal notranslate"><span class="pre">full_path</span></code> is to a directory, not to the JSON file.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="JSONManipulator.core.DeleteObject.delete_object">
+<code class="sig-name descname">delete_object</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.DeleteObject.delete_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Take the list of objects, after a user chose ones to delete,         call <code class="docutils literal notranslate"><span class="pre">execute_delete()</span></code> function.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.DeleteObject.desc">
+<code class="sig-name descname">desc</code><a class="headerlink" href="#JSONManipulator.core.DeleteObject.desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="JSONManipulator.core.DeleteObject.execute_delete">
+<code class="sig-name descname">execute_delete</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dict_container</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.DeleteObject.execute_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete redundant objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.DeleteObject.full_path">
+<code class="sig-name descname">full_path</code><a class="headerlink" href="#JSONManipulator.core.DeleteObject.full_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.DeleteObject.key">
+<code class="sig-name descname">key</code><a class="headerlink" href="#JSONManipulator.core.DeleteObject.key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.DeleteObject.levenshtein">
+<code class="sig-name descname">levenshtein</code><a class="headerlink" href="#JSONManipulator.core.DeleteObject.levenshtein" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.DeleteObject.value">
+<code class="sig-name descname">value</code><a class="headerlink" href="#JSONManipulator.core.DeleteObject.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="JSONManipulator.core.GetInformation">
+<em class="property">class </em><code class="sig-prename descclassname">JSONManipulator.core.</code><code class="sig-name descname">GetInformation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">full_path</span></em>, <em class="sig-param"><span class="n">levenshtein</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">key</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">desc</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#JSONManipulator.core.GetInformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The base class to retrieve the information about desired object(s).</p>
+<dl>
+<dt>Args:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">(str)</span></code>: to find the object by the key in the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">desc</span> <span class="pre">(str)</span></code>: to find the object by the description.</p>
+<p><code class="docutils literal notranslate"><span class="pre">full_path</span> <span class="pre">(str)</span></code>: the full path to the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">value</span> <span class="pre">(str)</span></code>: the value of <code class="docutils literal notranslate"><span class="pre">key</span></code>/<code class="docutils literal notranslate"><span class="pre">desc</span></code>         which will be used to find the object(s).</p>
+<p><code class="docutils literal notranslate"><span class="pre">levenshtein</span> <span class="pre">(float)</span></code>: the similarity of the elicited objects         to the input. By default, seeks 100% similarity.</p>
+</dd>
+<dt>Raises:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">exceptions.NoKeyAndDesc</span></code>:         if neither <code class="docutils literal notranslate"><span class="pre">key</span></code> nor <code class="docutils literal notranslate"><span class="pre">desc</span></code> is entered.</p>
+<p><code class="docutils literal notranslate"><span class="pre">FileNotFoundError</span></code>:         if the JSON file is not found by <code class="docutils literal notranslate"><span class="pre">full_path</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">IsADirectoryError</span></code>:         if <code class="docutils literal notranslate"><span class="pre">full_path</span></code> is to a directory, not to the JSON file.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="JSONManipulator.core.GetInformation.cap_sentence">
+<em class="property">static </em><code class="sig-name descname">cap_sentence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">string</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#JSONManipulator.core.GetInformation.cap_sentence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if <code class="docutils literal notranslate"><span class="pre">string</span></code> looks like a person’s first, middle or/and last names.</p>
+<dl>
+<dt>Returns:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">True</span></code>: if the entered data is about a person.</p>
+<p><code class="docutils literal notranslate"><span class="pre">False</span></code>: else.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.GetInformation.desc">
+<code class="sig-name descname">desc</code><a class="headerlink" href="#JSONManipulator.core.GetInformation.desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.GetInformation.full_path">
+<code class="sig-name descname">full_path</code><a class="headerlink" href="#JSONManipulator.core.GetInformation.full_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="JSONManipulator.core.GetInformation.get_information">
+<code class="sig-name descname">get_information</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>Dict<span class="p">]</span><a class="headerlink" href="#JSONManipulator.core.GetInformation.get_information" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process the user’s parameters and the JSON file’s values,         then call additional in-class functions to analyse data         and output objects, accordingly.</p>
+<dl>
+<dt>Returns:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">List[Dict]</span></code>: if <code class="docutils literal notranslate"><span class="pre">GetInformation</span></code> is a parent class -             for <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">of</span> <span class="pre">dictionaries</span></code> manipulations.</p>
+<p><code class="docutils literal notranslate"><span class="pre">None</span></code>: else.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.GetInformation.key">
+<code class="sig-name descname">key</code><a class="headerlink" href="#JSONManipulator.core.GetInformation.key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.GetInformation.levenshtein">
+<code class="sig-name descname">levenshtein</code><a class="headerlink" href="#JSONManipulator.core.GetInformation.levenshtein" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="JSONManipulator.core.GetInformation.levenshtein_calc">
+<code class="sig-name descname">levenshtein_calc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dictionary_value</span></em>, <em class="sig-param"><span class="n">dictionary</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.GetInformation.levenshtein_calc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare processed <code class="docutils literal notranslate"><span class="pre">object.value</span></code> and <code class="docutils literal notranslate"><span class="pre">dictionary_value</span></code>,         and if the similarity is higher than <code class="docutils literal notranslate"><span class="pre">object.levenshtein</span></code>         - append to the list for the further output.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.GetInformation.output_dict_container">
+<code class="sig-name descname">output_dict_container</code><a class="headerlink" href="#JSONManipulator.core.GetInformation.output_dict_container" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="JSONManipulator.core.GetInformation.output_for_key_and_value">
+<code class="sig-name descname">output_for_key_and_value</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.GetInformation.output_for_key_and_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process <code class="docutils literal notranslate"><span class="pre">object.output_dict_container</span></code> from <code class="docutils literal notranslate"><span class="pre">levenshtein_calc()</span></code>,         beautify the output of the objects.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="JSONManipulator.core.GetInformation.value">
+<code class="sig-name descname">value</code><a class="headerlink" href="#JSONManipulator.core.GetInformation.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="JSONManipulator.core.set_up">
+<code class="sig-prename descclassname">JSONManipulator.core.</code><code class="sig-name descname">set_up</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">full_path</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#JSONManipulator.core.set_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configure the initial JSON file. Add descriptions for the keys in     the JSON file for the further more readable retrieval.</p>
+<dl>
+<dt>Args:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">full_path</span> <span class="pre">(str)</span></code>: the path to the desired file.</p>
+</dd>
+<dt>Raises:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">FileNotFoundError</span></code>:         if the JSON file is not found by <code class="docutils literal notranslate"><span class="pre">full_path</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">IsADirectoryError</span></code>:         if <code class="docutils literal notranslate"><span class="pre">full_path</span></code> is to a directory, not to the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">exception.NotSupportedJSONFile</span></code>:         if the JSON file is not supported by the package.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-JSONManipulator.exceptions">
+<span id="jsonmanipulator-exceptions-module"></span><h2>JSONManipulator.exceptions module<a class="headerlink" href="#module-JSONManipulator.exceptions" title="Permalink to this headline">¶</a></h2>
+<p>The JSONManipulator’s exceptions.</p>
+<dl class="py exception">
+<dt id="JSONManipulator.exceptions.NoKeyAndDesc">
+<em class="property">exception </em><code class="sig-prename descclassname">JSONManipulator.exceptions.</code><code class="sig-name descname">NoKeyAndDesc</code><a class="headerlink" href="#JSONManipulator.exceptions.NoKeyAndDesc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Raised when a user has entered neither key nor desc.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="JSONManipulator.exceptions.NotSupportedJSONFile">
+<em class="property">exception </em><code class="sig-prename descclassname">JSONManipulator.exceptions.</code><code class="sig-name descname">NotSupportedJSONFile</code><a class="headerlink" href="#JSONManipulator.exceptions.NotSupportedJSONFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Raised when the JSON file’s structure     does not confront to [{…},{…},…].</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-JSONManipulator">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-JSONManipulator" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt>NAME</dt><dd><p>JSONManipulator.</p>
+</dd>
+<dt>DESCRIPTION</dt><dd><p>A Python library to manipulate objects in JSON files.</p>
+</dd>
+<dt>PACKAGE CONTENTS</dt><dd><p><code class="docutils literal notranslate"><span class="pre">set_up(full_path)</span></code>: initially set up the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">GetInformation(value,</span> <span class="pre">full_path,</span> <span class="pre">levenshtein=1.0,</span> <span class="pre">key=None,</span> <span class="pre">desc=None)</span></code>:     retrieve information about particular objects.</p>
+<p><code class="docutils literal notranslate"><span class="pre">ChangeValue(value,</span> <span class="pre">full_path,</span> <span class="pre">levenshtein=1.0,</span> <span class="pre">key=None,</span> <span class="pre">desc=None)</span></code>:     change values of particular objects in the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">AddObject(full_path)</span></code>: add a new object to the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">DeleteObject(value,</span> <span class="pre">full_path,</span> <span class="pre">levenshtein=1.0,</span> <span class="pre">key=None,</span> <span class="pre">desc=None)</span></code>:     delete particular objects in the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">AddKey(full_path)</span></code>: add a new key to each object in the JSON file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">ChangeAllValues(value,</span> <span class="pre">full_path)</span></code>:     change values of all objects in the JSON file.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="modules.html" class="btn btn-neutral float-left" title="JSONManipulator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Andrew Polukhin
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

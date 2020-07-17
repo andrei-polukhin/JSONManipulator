@@ -1,6 +1,11 @@
+import sys
+import os
+
 from JSONManipulator import ChangeAllValues
 
 ChangeAllValues(
-    "/"
-    "/examples/using_classes/ChangeAllValues/books_with_changed_values.json"  # specify your path.
+    os.path.join(
+        sys.path[0],
+        "examples/using_classes/ChangeAllValues/books_with_changed_values.json"
+    )
 )
