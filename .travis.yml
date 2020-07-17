@@ -1,5 +1,10 @@
-install: pip install -U tox-travis
 language: python
 python:
-- 3.8
-script: tox
+  - 3.8
+install:
+  - pip install -U tox-travis
+  - pip install -U setuptools && pip install tox tox-travis coveralls
+script:
+  - tox
+after_success:
+  - coveralls
