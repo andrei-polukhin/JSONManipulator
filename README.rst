@@ -2,8 +2,9 @@ JSONManipulator
 ===============
 .. image:: https://travis-ci.com/pandrey2003/JSONManipulator.svg?branch=master
     :target: https://travis-ci.com/pandrey2003/JSONManipulator
-.. image:: https://coveralls.io/repos/github/pandrey2003/JSONManipulator/badge.svg
-    :target: https://coveralls.io/github/pandrey2003/JSONManipulator
+.. image:: https://coveralls.io/repos/github/pandrey2003/JSONManipulator/badge.svg?branch=master
+    :target: https://coveralls.io/github/pandrey2003/JSONManipulator?branch=master
+
 
 JSONManipulator is a Python package to manipulate objects in JSON files.
 
