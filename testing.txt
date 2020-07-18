@@ -1,9 +1,60 @@
-============================= test session starts ==============================
-platform linux -- Python 3.8.2, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
-rootdir: /home/andrew/JSONManipulator
-plugins: metadata-1.10.0, cov-2.10.0, html-2.1.1
-collected 7 items
+Title
+ISBN
+Number of pages
+Date of publishing
 
-tests/set_up/test_set_up.py 
-Assign a short description to the keys (press <Enter> if you don't need this key):
-<title>: 
+Short description
+
+
+Authors
+Categories
+reading_status
+Reading Status
+
+rating
+Rating
+Unknown
+technical_info
+
+Access granted
+My perfect book
+578985
+
+
+
+['Andrew Polukhin', 'Vladyslav Ovchynnykov']
+To my unaware tutor
+y
+
+
+
+
+
+Hidden
+Added Python book: Renewed
+del
+
+
+
+all
+Book for collective change - all
+del
+
+
+
+1-2
+Book for collective change - selective
+
+
+
+
+2
+Decimal
+
+
+
+
+y
+all
+1-2,3
+1
