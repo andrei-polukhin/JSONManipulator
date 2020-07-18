@@ -34,3 +34,10 @@ History
 * Shortened the relevant lines of code by applying the knowledge of the copy function.
 * Deployed ``__slots__``, saving RAM when using the package.
 
+
+3.0.1 (2017-07-18)
+------------------
+
+* Created more tests -> code coverage = 98%.
+* Minor optimization of the core module.
+
