@@ -7,6 +7,20 @@ from JSONManipulator import GetInformation
 
 def test_get_information():
     # -- testing the class
+    with pytest.raises(FileNotFoundError):
+        assert GetInformation(
+            key="categories", value=["Web Development"],
+            full_path="some_folder/file.json"
+        )
+
+    with pytest.raises(IsADirectoryError):
+        assert GetInformation(
+            desc="The date of publishing", value="2018-09-20",
+            full_path=os.path.join(sys.path[0],
+                                   "tests"
+                                   )
+        )
+
     with pytest.raises(SystemExit) as e:
         GetInformation(
             desc="Categories", value="Java",

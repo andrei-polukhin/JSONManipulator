@@ -612,9 +612,6 @@ class AddKey:
 
     def __init__(self, full_path):
         self.full_path = full_path
-        self.input_key = ""
-        self.input_desc = ""
-        self.default_value = ""
         self.add_key()
 
     def add_key(self) -> None:
@@ -629,29 +626,29 @@ class AddKey:
             "in case you do not need the description.\n"
         )
 
-        self.input_key = input("Enter your new key: ")
-        self.input_desc = input("Enter the description of your new key: ")
-        self.default_value = input("Enter the default value of your key: ")
+        input_key = input("Enter your new key: ")
+        input_desc = input("Enter the description of your new key: ")
+        default_value = input("Enter the default value of your key: ")
 
         with open(self.full_path, 'r') as file:
             file_contents = json.load(file)
 
-        if self.input_key and self.input_desc:
+        if input_key and input_desc:
             for dictionary in file_contents:
-                if not dictionary.get(self.input_key):
-                    dictionary[self.input_key] = {self.input_desc: self.default_value}
-                elif dictionary.get(self.input_key):
+                if not dictionary.get(input_key):
+                    dictionary[input_key] = {input_desc: default_value}
+                elif dictionary.get(input_key):
                     print("\nSorry, your key already exists. "
                           "Try our ChangeAllValues functionality instead.")
                     break
             else:
                 print("\nSuccess!")
 
-        elif self.input_key and not self.input_desc:
+        elif input_key and not input_desc:
             for dictionary in file_contents:
-                if not dictionary.get(self.input_key):
-                    dictionary[self.input_key] = self.default_value
-                elif dictionary.get(self.input_key):
+                if not dictionary.get(input_key):
+                    dictionary[input_key] = default_value
+                elif dictionary.get(input_key):
                     print("\nSorry, your key already exists. "
                           "Try our ChangeAllValues functionality instead.")
                     break
