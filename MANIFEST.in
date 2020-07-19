@@ -7,3 +7,4 @@ include requirements.txt
 include .travis.yml
 include .coveragerc
 include HISTORY.rst
+include testing.txt
