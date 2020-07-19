@@ -4,6 +4,12 @@ JSONManipulator
     :target: https://travis-ci.com/pandrey2003/JSONManipulator
 .. image:: https://coveralls.io/repos/github/pandrey2003/JSONManipulator/badge.svg?branch=master
     :target: https://coveralls.io/github/pandrey2003/JSONManipulator?branch=master
+.. image:: https://pyup.io/repos/github/pandrey2003/JSONManipulator/shield.svg
+    :target: https://pyup.io/repos/github/pandrey2003/JSONManipulator/
+    :alt: Updates
+.. image:: https://pyup.io/repos/github/pandrey2003/JSONManipulator/python-3-shield.svg
+    :target: https://pyup.io/repos/github/pandrey2003/JSONManipulator/
+    :alt: Python 3
 
 
 JSONManipulator is a Python package to manipulate objects in JSON files.
