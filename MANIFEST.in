@@ -4,3 +4,4 @@ include docs/*
 include HISTORY.rst
 include testing.txt
 include requirements/*
+include examples/*
