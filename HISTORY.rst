@@ -40,3 +40,13 @@ History
 
 * Created more tests -> code coverage = 98%.
 * Minor optimization of the core module.
+
+
+3.0.2 (2020-07-20)
+------------------
+
+* Resolved date misprint in HISTORY.rst.
+* Created more advanced structure for requirements.
+* Made requirements for installations the package more rigorous.
+* Deployed EditorConfig for better code consistency.
+* Added Makefile in the root directory. 
