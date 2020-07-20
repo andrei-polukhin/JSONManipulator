@@ -39,7 +39,7 @@ Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
 JSONManipulator could always use more documentation, whether as part of the
-official nider docs, in docstrings, or even on the web in blog posts,
+official JSONManipulator docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Submit Feedback
