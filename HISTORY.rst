@@ -49,4 +49,5 @@ History
 * Created more advanced structure for requirements.
 * Made requirements for installations the package more rigorous.
 * Deployed EditorConfig for better code consistency.
-* Added Makefile in the root directory. 
+* Added Makefile in the root directory.
+* Made use of the pyup bot (checks dependencies). 
