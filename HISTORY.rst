@@ -8,20 +8,20 @@ History
 * The first release of ``JSONManipulator``.
 
 
-1.1 (2017-07-12)
+1.1 (2020-07-12)
 ------------------
 
 * Added docstrings to the package and the ``examples`` directory.
 
 
-2.0 (2017-07-12)
+2.0 (2020-07-12)
 ------------------
 
 * Made more out-of-the-box functionality of the package.
 * Minor optimization of the core module.
 
 
-3.0 (2017-07-17)
+3.0 (2020-07-17)
 ------------------
 
 * Added Pytests.
@@ -35,9 +35,8 @@ History
 * Deployed ``__slots__``, saving RAM when using the package.
 
 
-3.0.1 (2017-07-18)
+3.0.1 (2020-07-18)
 ------------------
 
 * Created more tests -> code coverage = 98%.
 * Minor optimization of the core module.
-
