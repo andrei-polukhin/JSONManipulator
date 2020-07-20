@@ -31,7 +31,7 @@ test-all: ## run tests on every Python version with tox
 	tox < testing.txt
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run -m pytest -s > testing.txt
+	coverage run -m pytest -s < testing.txt
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
