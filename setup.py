@@ -28,7 +28,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English'
     ],
-    keywords="JSON Objects Manipulation",
+    keywords="Python JSON Objects",
     python_requires="~=3.6",
     packages=find_packages()
 )
