@@ -10,3 +10,5 @@ script:
   - tox < testing.txt
 after_success:
   - coveralls
+notifications:
+    email: false
