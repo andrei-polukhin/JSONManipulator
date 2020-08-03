@@ -1,7 +1,8 @@
-- name: merge pull requests from pyup-bot if CI passes
-  conditions:
-  - author=pyup-bot[bot]
-  - status-success=continuous-integration/travis/pr
-  actions:
-    merge:
-      method: merge
+pull_request_rules:
+  - name: automatic merge for PyUp pull requests
+    conditions:
+      - author=pyup-bot
+      - status-success=Travis CI - Pull Request
+    actions:
+      merge:
+        method: merge
