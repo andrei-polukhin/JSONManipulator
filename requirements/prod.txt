@@ -1,2 +1,2 @@
 pytest==6.0.1
-setuptools==49.2.1
+setuptools==49.2.0
