@@ -1,6 +1,6 @@
 -r prod.txt
 
-pip==20.2
+pip==20.2.1
 wheel==0.34.2
 flake8==3.8.3
 tox==3.18.1
