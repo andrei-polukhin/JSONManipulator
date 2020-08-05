@@ -6,8 +6,6 @@ pull_request_rules:
     actions:
       merge:
         method: merge
-
-pull_request_rules:
   - name: delete head branch after merge
     conditions:
       - merged
