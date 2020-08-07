@@ -15,7 +15,7 @@ JSONManipulator
     :alt: Documentation Status
 
 
-JSONManipulator is a Python package to manipulate objects in JSON files.
+JSONManipulator is a Python package to retrieve, add, delete, change and store objects in JSON files.
 
 Installation
 ------------
