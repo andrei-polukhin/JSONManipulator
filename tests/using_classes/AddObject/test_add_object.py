@@ -1,4 +1,3 @@
-import pytest
 import json
 import os
 import sys
@@ -28,11 +27,12 @@ def test_add_object():
     assert added_dictionary in file_contents
 
     # -- testing class AddObject
-    with pytest.raises(SystemExit) as e:
+    try:
         AddObject(
             os.path.join(
                 sys.path[0],
                 "tests/using_classes/AddObject/books_with_added_object.json"
             )
         )
-    assert e.value.code == 0
+    except Exception:
+        raise

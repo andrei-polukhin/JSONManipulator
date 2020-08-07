@@ -21,16 +21,17 @@ def test_get_information():
                                    )
         )
 
-    with pytest.raises(SystemExit) as e:
+    try:
         GetInformation(
             desc="Categories", value="Java",
             full_path=os.path.join(
                 sys.path[0], "tests/books_after_set_up.json"
             )
         )
-    assert e.value.code == 0
+    except Exception:
+        raise
 
-    with pytest.raises(SystemExit) as e:
+    try:
         GetInformation(
             key="title", value="SBCD Exam Study Kit",  # mistake, but correlated by levenshtein
             levenshtein=0.7,
@@ -38,9 +39,10 @@ def test_get_information():
                 sys.path[0], "tests/books_after_set_up.json"
             )
         )
-    assert e.value.code == 0
+    except Exception:
+        raise
 
-    with pytest.raises(SystemExit) as e:
+    try:
         GetInformation(
             desc="Authors",
             value="W. Frank Aleson, Charlie Collins, Robi Sen",  # mistake, but correlated by levenshtein
@@ -49,9 +51,10 @@ def test_get_information():
                 sys.path[0], "tests/books_after_set_up.json"
             )
         )
-    assert e.value.code == 0
+    except Exception:
+        raise
 
-    with pytest.raises(SystemExit) as e:
+    try:
         GetInformation(
             desc="Title",
             value="Not found book",
@@ -59,4 +62,5 @@ def test_get_information():
                 sys.path[0], "tests/books_after_set_up.json"
             )
         )
-    assert e.value.code == 0
+    except Exception:
+        raise

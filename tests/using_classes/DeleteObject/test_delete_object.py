@@ -1,4 +1,3 @@
-import pytest
 import json
 import os
 import sys
@@ -36,7 +35,7 @@ def test_delete_object():
     assert book not in new_file_contents
 
     # -- testing the class
-    with pytest.raises(SystemExit) as e1:
+    try:
         DeleteObject(
             desc="The date of publishing", value="2020-07-16",
             full_path=os.path.join(
@@ -44,9 +43,10 @@ def test_delete_object():
                 "tests/using_classes/DeleteObject/books_with_manual_books.json"
             )
         )
-    assert e1.value.code == 0
+    except Exception:
+        raise
 
-    with pytest.raises(SystemExit) as e2:
+    try:
         DeleteObject(
             key="title", value="Book for all Delete",
             levenshtein=0.79,
@@ -55,9 +55,10 @@ def test_delete_object():
                 "tests/using_classes/DeleteObject/books_with_manual_books.json"
             )
         )
-    assert e2.value.code == 0
+    except Exception:
+        raise
 
-    with pytest.raises(SystemExit) as e3:
+    try:
         DeleteObject(
             key="title", value="Book for selective Delete",
             levenshtein=0.79,
@@ -66,9 +67,10 @@ def test_delete_object():
                 "tests/using_classes/DeleteObject/books_with_manual_books.json"
             )
         )
-    assert e3.value.code == 0
+    except Exception:
+        raise
 
-    with pytest.raises(SystemExit) as e4:
+    try:
         DeleteObject(
             key="title", value="Is Decimal Delete",
             levenshtein=0.66,
@@ -77,4 +79,5 @@ def test_delete_object():
                 "tests/using_classes/DeleteObject/books_with_manual_books.json"
             )
         )
-    assert e4.value.code == 0
+    except Exception:
+        raise

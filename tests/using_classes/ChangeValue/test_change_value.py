@@ -45,7 +45,7 @@ def test_change_value():
                 sys.path[0], "tests/books_after_set_up.json"
             )
         )
-    with pytest.raises(SystemExit) as e1:
+    try:
         ChangeValue(
             desc="Authors", value=["Andrew Polukhin"],
             full_path=os.path.join(
@@ -53,9 +53,10 @@ def test_change_value():
                 "tests/using_classes/ChangeValue/books_with_manual_book.json"
             )
         )
-    assert e1.value.code == 0
+    except Exception:
+        raise
 
-    with pytest.raises(SystemExit) as e2:
+    try:
         ChangeValue(
             key="title", value="Book for all Change",
             levenshtein=0.79,
@@ -64,9 +65,10 @@ def test_change_value():
                 "tests/using_classes/ChangeValue/books_with_manual_books.json"
             )
         )
-    assert e2.value.code == 0
+    except Exception:
+        raise
 
-    with pytest.raises(SystemExit) as e3:
+    try:
         ChangeValue(
             key="title", value="Book for selective Change",
             levenshtein=0.79,
@@ -75,9 +77,10 @@ def test_change_value():
                 "tests/using_classes/ChangeValue/books_with_manual_books.json"
             )
         )
-    assert e3.value.code == 0
+    except Exception:
+        raise
 
-    with pytest.raises(SystemExit) as e4:
+    try:
         ChangeValue(
             key="title", value="Is Decimal Change",
             levenshtein=0.66,
@@ -86,4 +89,5 @@ def test_change_value():
                 "tests/using_classes/ChangeValue/books_with_manual_books.json"
             )
         )
-    assert e4.value.code == 0
+    except Exception:
+        raise

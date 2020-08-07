@@ -2,7 +2,6 @@
 
 """The JSONManipulator's core module with all the classes and functions."""
 
-import sys
 import json
 import copy
 from typing import List, Dict
@@ -58,7 +57,6 @@ def set_up(full_path) -> None:
         print("\nSuccess!")
     else:
         raise exceptions.NotSupportedJSONFile
-    sys.exit(0)
 
 
 class GetInformation:
@@ -156,7 +154,6 @@ class GetInformation:
 
         if self.__class__ != GetInformation:
             return self.output_dict_container
-        sys.exit(0)
 
     def levenshtein_calc(self, dictionary_value, dictionary) -> None:
         """Compare processed ``object.value`` and ``dictionary_value``, \
@@ -328,7 +325,6 @@ class ChangeValue(GetInformation):
 
             else:
                 print("Sorry, check your input.")
-        sys.exit(0)
 
     def change_one_object(self, start_dictionary) -> None:
         """Change user-chosen values from the object - ``start_dictionary``."""
@@ -507,7 +503,6 @@ class AddObject:
                 json.dump(file_contents, file)
 
             print("\nSuccess!")
-        sys.exit(0)
 
 
 class DeleteObject(ChangeValue):
@@ -577,7 +572,6 @@ class DeleteObject(ChangeValue):
                 self.execute_delete(execution_container)
             else:
                 print("\nSorry, check your input.")
-        sys.exit(0)
 
     def execute_delete(self, dict_container) -> None:
         """Delete redundant objects."""
@@ -660,7 +654,6 @@ class AddKey:
 
         with open(self.full_path, 'w') as file:
             json.dump(file_contents, file)
-        sys.exit(0)
 
 
 class ChangeAllValues(ChangeValue):
@@ -705,4 +698,3 @@ class ChangeAllValues(ChangeValue):
             self.change_several_objects(file_contents)
         else:
             print("Process terminated.")
-        sys.exit(0)

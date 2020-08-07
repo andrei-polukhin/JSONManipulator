@@ -1,4 +1,3 @@
-import pytest
 import json
 import os
 import sys
@@ -22,29 +21,32 @@ def test_add_key():
         assert dictionary["reading_status"]["Reading Status"] == "Not Read"
 
     # -- testing class
-    with pytest.raises(SystemExit) as e1:
+    try:
         AddKey(
             os.path.join(
                 sys.path[0],
                 "tests/using_classes/AddKey/books_with_added_key.json"
             )
         )
-    assert e1.value.code == 0
+    except Exception:
+        raise
 
-    with pytest.raises(SystemExit) as e2:
+    try:
         AddKey(
             os.path.join(
                 sys.path[0],
                 "tests/using_classes/AddKey/books_with_added_key.json"
             )
         )
-    assert e2.value.code == 0
+    except Exception:
+        raise
 
-    with pytest.raises(SystemExit) as e3:
+    try:
         AddKey(
             os.path.join(
                 sys.path[0],
                 "tests/using_classes/AddKey/books_with_added_key.json"
             )
         )
-    assert e3.value.code == 0
+    except Exception:
+        raise

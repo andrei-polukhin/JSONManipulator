@@ -38,7 +38,7 @@ History
 3.0.1 (2020-07-18)
 ------------------
 
-* Created more tests -> code coverage = 98%.
+* Created more tests which resulted in code coverage of 97.3%.
 * Minor optimization of the core module.
 
 
@@ -50,4 +50,12 @@ History
 * Made requirements for installations the package more rigorous.
 * Deployed EditorConfig for better code consistency.
 * Added Makefile in the root directory.
-* Made use of the pyup bot (checks dependencies). 
+* Made use of the pyup bot (checks dependencies).
+
+
+3.1 (2020-08-07)
+------------------
+
+* Used try/except in ``tests`` instead of ``sys.exit(0)`` in ``core`` module.
+* The package is now easy-to-use in Python terminal (the programme will not be aborted).
+

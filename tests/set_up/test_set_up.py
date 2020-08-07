@@ -47,11 +47,12 @@ def test_set_up():
                                    "tests"))
 
     # -- real set up
-    with pytest.raises(SystemExit) as e:
+    try:
         set_up(
             os.path.join(
                 sys.path[0],
                 "tests/set_up/books_to_set_up.json"
             )
         )
-    assert e.value.code == 0  # exited at code 0 (successfully finished)
+    except Exception:
+        raise
