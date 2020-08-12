@@ -13,6 +13,8 @@ JSONManipulator
 .. image:: https://readthedocs.org/projects/jsonmanipulator/badge/?version=latest
     :target: https://jsonmanipulator.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
+.. image:: https://pepy.tech/badge/jsonmanipulator
+    :target: https://pepy.tech/project/jsonmanipulator
 
 
 JSONManipulator is a Python package to retrieve, add, delete, change and store objects in JSON files.
