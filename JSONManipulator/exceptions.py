@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """The JSONManipulator's exceptions."""
 
 

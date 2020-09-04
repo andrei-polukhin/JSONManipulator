@@ -1,7 +1,7 @@
 import sys
 import os
 
-from JSONManipulator import DeleteObject
+from JSONManipulator.core.DeleteObject import DeleteObject
 
 DeleteObject(
     key="isbn", value=1935182927,

@@ -1,7 +1,7 @@
 import sys
 import os
 
-from JSONManipulator import GetInformation
+from JSONManipulator.core.GetInformation import GetInformaton
 
 GetInformation(
     key="authors", value="Glen Smith, Peter Ledbrook",

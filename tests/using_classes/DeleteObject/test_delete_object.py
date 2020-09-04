@@ -2,7 +2,7 @@ import json
 import os
 import sys
 
-from JSONManipulator import DeleteObject
+from JSONManipulator.core.DeleteObject import DeleteObject
 
 
 def test_delete_object():

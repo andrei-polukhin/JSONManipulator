@@ -3,7 +3,7 @@ import json
 import os
 import sys
 
-from JSONManipulator import set_up
+from JSONManipulator.core.set_up import set_up
 from JSONManipulator.exceptions import NotSupportedJSONFile
 
 

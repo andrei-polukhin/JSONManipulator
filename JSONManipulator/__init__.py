@@ -21,9 +21,14 @@ PACKAGE CONTENTS
     change values of all objects in the JSON file.
 """
 
-from JSONManipulator.core import set_up, GetInformation, ChangeValue, \
-    AddObject, DeleteObject, AddKey, ChangeAllValues
+from JSONManipulator.core.set_up import set_up
+from JSONManipulator.core.GetInformation import GetInformation
+from JSONManipulator.core.ChangeValue import ChangeValue
+from JSONManipulator.core.ChangeAllValues import ChangeAllValues
+from JSONManipulator.core.DeleteObject import DeleteObject
+from JSONManipulator.core.AddKey import AddKey
+from JSONManipulator.core.AddObject import AddObject
 
 __author__ = """Andrew Polukhin"""
 __email__ = """andrewmathematics2003@gmail.com"""
-__version__ = """3.1"""
+__version__ = """3.1.1"""

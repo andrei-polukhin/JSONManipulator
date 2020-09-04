@@ -1,7 +1,7 @@
 import sys
 import os
 
-from JSONManipulator import set_up
+from JSONManipulator.core.set_up import set_up
 
 set_up(
     full_path=os.path.join(

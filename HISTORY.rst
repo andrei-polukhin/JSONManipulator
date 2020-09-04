@@ -59,3 +59,8 @@ History
 * Used try/except in ``tests`` instead of ``sys.exit(0)`` in ``core`` module.
 * The package is now easy-to-use in Python terminal (the programme will not be aborted).
 
+
+3.1.1 (2020-09-04)
+------------------
+
+* Split ``core`` module to separate files, which resulted in a better readable code.

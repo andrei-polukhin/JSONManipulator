@@ -1,7 +1,7 @@
 import sys
 import os
 
-from JSONManipulator import AddKey
+from JSONManipulator.core.AddKey import AddKey
 
 AddKey(
     os.path.join(

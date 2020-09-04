@@ -2,7 +2,7 @@ import json
 import os
 import sys
 
-from JSONManipulator import AddKey
+from JSONManipulator.core.AddKey import AddKey
 
 
 def test_add_key():

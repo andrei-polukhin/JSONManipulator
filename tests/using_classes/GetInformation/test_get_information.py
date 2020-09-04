@@ -2,7 +2,7 @@ import pytest
 import os
 import sys
 
-from JSONManipulator import GetInformation
+from JSONManipulator.core.GetInformation import GetInformaton
 
 
 def test_get_information():

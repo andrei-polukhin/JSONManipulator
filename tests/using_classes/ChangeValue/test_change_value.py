@@ -3,7 +3,7 @@ import json
 import os
 import sys
 
-from JSONManipulator import ChangeValue
+from JSONManipulator.core.ChangeValue import ChangeValue
 from JSONManipulator.exceptions import NoKeyAndDesc
 
 

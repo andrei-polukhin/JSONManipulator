@@ -2,7 +2,7 @@ import json
 import os
 import sys
 
-from JSONManipulator import ChangeAllValues
+from JSONManipulator.core.ChangeAllValues import ChangeAllValues
 
 
 def test_change_all_values():

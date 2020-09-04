@@ -17,7 +17,7 @@ setup(
     name="JSONManipulator",
     description="A Python package to manipulate objects in JSON files.",
     url="https://github.com/pandrey2003/JSONManipulator",
-    version="3.1",
+    version="3.1.1",
     long_description=long_description,
     author="Andrew Polukhin",
     author_email="andrewmathematics2003@gmail.com",
