@@ -1,7 +1,7 @@
 import sys
 import os
 
-from JSONManipulator.core.ChangeValue import ChangeValue
+from JSONManipulator import ChangeValue
 
 ChangeValue(
     key="title", value="Flex", levenshtein=0.3,  # to find all the books with `Flex`

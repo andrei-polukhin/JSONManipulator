@@ -1,7 +1,7 @@
 import sys
 import os
 
-from JSONManipulator.core.ChangeAllValues import ChangeAllValues
+from JSONManipulator import ChangeAllValues
 
 ChangeAllValues(
     os.path.join(

@@ -1,7 +1,7 @@
 import sys
 import os
 
-from JSONManipulator.core.GetInformation import GetInformaton
+from JSONManipulator import GetInformation
 
 GetInformation(
     desc="Categories", value=["Java"],  # ``desc`` was specified by a user in set_up()

@@ -1,7 +1,7 @@
 import sys
 import os
 
-from JSONManipulator.core.AddObject import AddObject
+from JSONManipulator import AddObject
 
 AddObject(
     os.path.join(

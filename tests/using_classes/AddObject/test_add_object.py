@@ -2,7 +2,7 @@ import json
 import os
 import sys
 
-from JSONManipulator.core.AddObject import AddObject
+from JSONManipulator import AddObject
 
 
 def test_add_object():
