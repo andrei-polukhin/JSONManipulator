@@ -17,6 +17,12 @@ Unknown
 technical_info
 
 Access granted
+reading_status
+
+check-another-functionality
+
+no-key
+so-no-changes
 My perfect book
 578985
 

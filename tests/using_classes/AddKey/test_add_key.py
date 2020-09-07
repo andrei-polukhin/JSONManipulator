@@ -50,3 +50,23 @@ def test_add_key():
         )
     except Exception:
         raise
+
+    try:
+        AddKey(
+            os.path.join(
+                sys.path[0],
+                "tests/using_classes/AddKey/books_with_added_key.json"
+            )
+        )
+    except Exception:
+        raise
+
+    try:
+        AddKey(
+            os.path.join(
+                sys.path[0],
+                "tests/using_classes/AddKey/books_with_added_key.json"
+            )
+        )
+    except Exception:
+        raise
