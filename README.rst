@@ -4,6 +4,7 @@ JSONManipulator
     :target: https://travis-ci.com/pandrey2003/JSONManipulator
 .. image:: https://coveralls.io/repos/github/pandrey2003/JSONManipulator/badge.svg?branch=master
     :target: https://coveralls.io/github/pandrey2003/JSONManipulator?branch=master
+    :alt: Coveralls
 .. image:: https://www.codefactor.io/repository/github/pandrey2003/jsonmanipulator/badge
     :target: https://www.codefactor.io/repository/github/pandrey2003/jsonmanipulator
     :alt: CodeFactor
