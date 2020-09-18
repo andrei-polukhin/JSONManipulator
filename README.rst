@@ -17,7 +17,7 @@ JSONManipulator
 .. image:: https://readthedocs.org/projects/jsonmanipulator/badge/?version=latest
     :target: https://jsonmanipulator.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
-.. image:: https://static.pepy.tech/badge/jsonmanipulator
+.. image:: https://pepy.tech/badge/jsonmanipulator
     :target: https://pepy.tech/project/jsonmanipulator
 
 
