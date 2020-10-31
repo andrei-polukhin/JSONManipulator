@@ -1,5 +1,9 @@
 JSONManipulator
 ===============
+
+.. image:: https://api.codacy.com/project/badge/Grade/eca03080aafd456e8321e3d7909d2458
+   :alt: Codacy Badge
+   :target: https://app.codacy.com/gh/pandrey2003/JSONManipulator?utm_source=github.com&utm_medium=referral&utm_content=pandrey2003/JSONManipulator&utm_campaign=Badge_Grade
 .. image:: https://travis-ci.com/pandrey2003/JSONManipulator.svg?branch=master
     :target: https://travis-ci.com/pandrey2003/JSONManipulator
 .. image:: https://coveralls.io/repos/github/pandrey2003/JSONManipulator/badge.svg?branch=master
