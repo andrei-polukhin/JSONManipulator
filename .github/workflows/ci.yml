@@ -14,6 +14,13 @@ jobs:
       matrix:
         python-version: [3.6, 3.7, 3.8, 3.9]
     steps:
+      - name: Cleanup pre-installed tools
+          run: |
+            # Clean memory for container
+            sudo rm -rf /usr/share/dotnet
+            sudo rm -rf /opt/ghc
+            sudo rm -rf "/usr/local/share/boost"
+            sudo rm -rf "$AGENT_TOOLSDIRECTORY"
       - uses: actions/checkout@v1
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
@@ -27,5 +34,6 @@ jobs:
         run: tox < testing.txt
       - name: Run coverage on success
         if: ${{ success() }}
-        run: |
-          coveralls
+        uses: coverallsapp/github-action@v1.1.2
+        with:
+          github-token: ${{ github.token }}
