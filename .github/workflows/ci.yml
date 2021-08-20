@@ -27,6 +27,6 @@ jobs:
         run: tox < testing.txt
       - name: Run coverage on success
         if: ${{ success() }}
-        uses: coverallsapp/github-action@v1.1.2
         with:
           github-token: ${{ github.token }}
+        run: coveralls
