@@ -31,7 +31,7 @@ jobs:
         - env:
             COVERALLS_PARALLEL: true
             COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-         run: coveralls
+          run: coveralls
   complete_coverals:
     needs: build
     runs-on: ubuntu-latest
