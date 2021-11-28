@@ -1,6 +1,11 @@
 flake8==4.0.1
 tox==3.24.4
 coverage==6.2
-Sphinx==4.2.0
+Sphinx==4.3.1
+coverage==6.2
+<<<<<<< HEAD
+=======
+Sphinx==4.3.1
+>>>>>>> f9a72ed (Update sphinx from 3.2.0 to 4.3.1)
 twine==3.5.0
 pytest==6.2.5
