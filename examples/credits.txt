@@ -1,2 +1,2 @@
-The JSON file books.json is taken from
+The JSON file "books.json" is taken from
 https://github.com/bvaughn/infinite-list-reflow-examples/blob/master/books.json.
