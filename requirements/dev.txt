@@ -3,4 +3,4 @@ tox==4.6.3
 coverage==7.2.7
 Sphinx==7.0.1
 twine==4.0.2
-pytest==7.3.2
+pytest==7.4.0
