@@ -1,4 +1,4 @@
-flake8==7.1.2
+flake8==7.2.0
 tox==4.25.0
 coverage==7.7.1
 Sphinx==8.3.0
