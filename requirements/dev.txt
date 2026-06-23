@@ -1,5 +1,5 @@
 flake8==7.2.0
-tox==4.55.1
+tox==4.56.0
 coverage==7.14.3
 Sphinx==9.1.0
 twine==6.2.0
